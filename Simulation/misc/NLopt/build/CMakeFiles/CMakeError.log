@@ -1,0 +1,262 @@
+Determining if files unistd.h exist failed with the following output:
+Change Dir: D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_d3d24.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Microsoft (R) Build Engine, version 12.0.21005.1
+[Microsoft .NET Framework, Version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+La g‚n‚ration a d‚marr‚ 19/03/2017 18:10:24.
+Projet "D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_d3d24.vcxproj" sur le noud 1 (cibles par d‚faut).
+PrepareForBuild:
+  Cr‚ation du r‚pertoire "cmTC_d3d24.dir\Debug\".
+  Cr‚ation du r‚pertoire "D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\Debug\".
+  Cr‚ation du r‚pertoire "cmTC_d3d24.dir\Debug\cmTC_d3d24.tlog\".
+InitializeBuildStatus:
+  Cr‚ation de "cmTC_d3d24.dir\Debug\cmTC_d3d24.tlog\unsuccessfulbuild", car "AlwaysCreate" a ‚t‚ sp‚cifi‚.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_d3d24.dir\Debug\\" /Fd"cmTC_d3d24.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\CheckIncludeFiles.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.21005.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_d3d24.dir\Debug\\" /Fd"cmTC_d3d24.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\CheckIncludeFiles.c"
+  
+  CheckIncludeFiles.c
+D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\CheckIncludeFiles.c(2): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory [D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_d3d24.vcxproj]
+G‚n‚ration du projet "D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_d3d24.vcxproj" termin‚e (cibles par d‚faut) -- CHEC.
+
+CHEC de la build.
+
+"D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_d3d24.vcxproj" (cible par d‚faut) (1) ->
+(ClCompile cible) -> 
+  D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\CheckIncludeFiles.c(2): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory [D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_d3d24.vcxproj]
+
+    0 Avertissement(s)
+    1 Erreur(s)
+
+Temps ‚coul‚ 00:00:00.25
+
+Source:
+/* */
+#include <unistd.h>
+
+
+int main(void){return 0;}
+
+Determining if files strings.h exist failed with the following output:
+Change Dir: D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_91115.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Microsoft (R) Build Engine, version 12.0.21005.1
+[Microsoft .NET Framework, Version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+La g‚n‚ration a d‚marr‚ 19/03/2017 18:10:24.
+Projet "D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_91115.vcxproj" sur le noud 1 (cibles par d‚faut).
+PrepareForBuild:
+  Cr‚ation du r‚pertoire "cmTC_91115.dir\Debug\".
+  Cr‚ation du r‚pertoire "D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\Debug\".
+  Cr‚ation du r‚pertoire "cmTC_91115.dir\Debug\cmTC_91115.tlog\".
+InitializeBuildStatus:
+  Cr‚ation de "cmTC_91115.dir\Debug\cmTC_91115.tlog\unsuccessfulbuild", car "AlwaysCreate" a ‚t‚ sp‚cifi‚.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_91115.dir\Debug\\" /Fd"cmTC_91115.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\CheckIncludeFiles.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.21005.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_91115.dir\Debug\\" /Fd"cmTC_91115.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\CheckIncludeFiles.c"
+  
+  CheckIncludeFiles.c
+D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\CheckIncludeFiles.c(2): fatal error C1083: Cannot open include file: 'strings.h': No such file or directory [D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_91115.vcxproj]
+G‚n‚ration du projet "D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_91115.vcxproj" termin‚e (cibles par d‚faut) -- CHEC.
+
+CHEC de la build.
+
+"D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_91115.vcxproj" (cible par d‚faut) (1) ->
+(ClCompile cible) -> 
+  D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\CheckIncludeFiles.c(2): fatal error C1083: Cannot open include file: 'strings.h': No such file or directory [D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_91115.vcxproj]
+
+    0 Avertissement(s)
+    1 Erreur(s)
+
+Temps ‚coul‚ 00:00:00.21
+
+Source:
+/* */
+#include <strings.h>
+
+
+int main(void){return 0;}
+
+Determining if the function isinf exists failed with the following output:
+Change Dir: D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_765f4.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Microsoft (R) Build Engine, version 12.0.21005.1
+[Microsoft .NET Framework, Version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+La g‚n‚ration a d‚marr‚ 19/03/2017 18:10:28.
+Projet "D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_765f4.vcxproj" sur le noud 1 (cibles par d‚faut).
+PrepareForBuild:
+  Cr‚ation du r‚pertoire "cmTC_765f4.dir\Debug\".
+  Cr‚ation du r‚pertoire "D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\Debug\".
+  Cr‚ation du r‚pertoire "cmTC_765f4.dir\Debug\cmTC_765f4.tlog\".
+InitializeBuildStatus:
+  Cr‚ation de "cmTC_765f4.dir\Debug\cmTC_765f4.tlog\unsuccessfulbuild", car "AlwaysCreate" a ‚t‚ sp‚cifi‚.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=isinf /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_765f4.dir\Debug\\" /Fd"cmTC_765f4.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.7\Modules\CheckFunctionExists.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.21005.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=isinf /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_765f4.dir\Debug\\" /Fd"cmTC_765f4.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.7\Modules\CheckFunctionExists.c"
+  
+  CheckFunctionExists.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\Debug\cmTC_765f4.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/build/CMakeFiles/CMakeTmp/Debug/cmTC_765f4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/build/CMakeFiles/CMakeTmp/Debug/cmTC_765f4.lib" /MACHINE:X64  /machine:x64 cmTC_765f4.dir\Debug\CheckFunctionExists.obj
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol isinf referenced in function main [D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_765f4.vcxproj]
+D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\Debug\cmTC_765f4.exe : fatal error LNK1120: 1 unresolved externals [D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_765f4.vcxproj]
+G‚n‚ration du projet "D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_765f4.vcxproj" termin‚e (cibles par d‚faut) -- CHEC.
+
+CHEC de la build.
+
+"D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_765f4.vcxproj" (cible par d‚faut) (1) ->
+(Link cible) -> 
+  CheckFunctionExists.obj : error LNK2019: unresolved external symbol isinf referenced in function main [D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_765f4.vcxproj]
+  D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\Debug\cmTC_765f4.exe : fatal error LNK1120: 1 unresolved externals [D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_765f4.vcxproj]
+
+    0 Avertissement(s)
+    2 Erreur(s)
+
+Temps ‚coul‚ 00:00:00.29
+
+
+Determining if the function isinf exists failed with the following output:
+Change Dir: D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_32ee0.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Microsoft (R) Build Engine, version 12.0.21005.1
+[Microsoft .NET Framework, Version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+La g‚n‚ration a d‚marr‚ 19/03/2017 18:10:28.
+Projet "D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_32ee0.vcxproj" sur le noud 1 (cibles par d‚faut).
+PrepareForBuild:
+  Cr‚ation du r‚pertoire "cmTC_32ee0.dir\Debug\".
+  Cr‚ation du r‚pertoire "D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\Debug\".
+  Cr‚ation du r‚pertoire "cmTC_32ee0.dir\Debug\cmTC_32ee0.tlog\".
+InitializeBuildStatus:
+  Cr‚ation de "cmTC_32ee0.dir\Debug\cmTC_32ee0.tlog\unsuccessfulbuild", car "AlwaysCreate" a ‚t‚ sp‚cifi‚.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=isinf /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_32ee0.dir\Debug\\" /Fd"cmTC_32ee0.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.7\Modules\CheckFunctionExists.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.21005.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=isinf /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_32ee0.dir\Debug\\" /Fd"cmTC_32ee0.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.7\Modules\CheckFunctionExists.c"
+  
+  CheckFunctionExists.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\Debug\cmTC_32ee0.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/build/CMakeFiles/CMakeTmp/Debug/cmTC_32ee0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/build/CMakeFiles/CMakeTmp/Debug/cmTC_32ee0.lib" /MACHINE:X64  /machine:x64 cmTC_32ee0.dir\Debug\CheckFunctionExists.obj
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol isinf referenced in function main [D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_32ee0.vcxproj]
+D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\Debug\cmTC_32ee0.exe : fatal error LNK1120: 1 unresolved externals [D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_32ee0.vcxproj]
+G‚n‚ration du projet "D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_32ee0.vcxproj" termin‚e (cibles par d‚faut) -- CHEC.
+
+CHEC de la build.
+
+"D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_32ee0.vcxproj" (cible par d‚faut) (1) ->
+(Link cible) -> 
+  CheckFunctionExists.obj : error LNK2019: unresolved external symbol isinf referenced in function main [D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_32ee0.vcxproj]
+  D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\Debug\cmTC_32ee0.exe : fatal error LNK1120: 1 unresolved externals [D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_32ee0.vcxproj]
+
+    0 Avertissement(s)
+    2 Erreur(s)
+
+Temps ‚coul‚ 00:00:00.31
+
+
+Determining if the function gettimeofday exists failed with the following output:
+Change Dir: D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_a3baf.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Microsoft (R) Build Engine, version 12.0.21005.1
+[Microsoft .NET Framework, Version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+La g‚n‚ration a d‚marr‚ 19/03/2017 18:10:28.
+Projet "D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_a3baf.vcxproj" sur le noud 1 (cibles par d‚faut).
+PrepareForBuild:
+  Cr‚ation du r‚pertoire "cmTC_a3baf.dir\Debug\".
+  Cr‚ation du r‚pertoire "D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\Debug\".
+  Cr‚ation du r‚pertoire "cmTC_a3baf.dir\Debug\cmTC_a3baf.tlog\".
+InitializeBuildStatus:
+  Cr‚ation de "cmTC_a3baf.dir\Debug\cmTC_a3baf.tlog\unsuccessfulbuild", car "AlwaysCreate" a ‚t‚ sp‚cifi‚.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=gettimeofday /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_a3baf.dir\Debug\\" /Fd"cmTC_a3baf.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.7\Modules\CheckFunctionExists.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.21005.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=gettimeofday /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_a3baf.dir\Debug\\" /Fd"cmTC_a3baf.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.7\Modules\CheckFunctionExists.c"
+  
+  CheckFunctionExists.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\Debug\cmTC_a3baf.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/build/CMakeFiles/CMakeTmp/Debug/cmTC_a3baf.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/build/CMakeFiles/CMakeTmp/Debug/cmTC_a3baf.lib" /MACHINE:X64  /machine:x64 cmTC_a3baf.dir\Debug\CheckFunctionExists.obj
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol gettimeofday referenced in function main [D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_a3baf.vcxproj]
+D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\Debug\cmTC_a3baf.exe : fatal error LNK1120: 1 unresolved externals [D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_a3baf.vcxproj]
+G‚n‚ration du projet "D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_a3baf.vcxproj" termin‚e (cibles par d‚faut) -- CHEC.
+
+CHEC de la build.
+
+"D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_a3baf.vcxproj" (cible par d‚faut) (1) ->
+(Link cible) -> 
+  CheckFunctionExists.obj : error LNK2019: unresolved external symbol gettimeofday referenced in function main [D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_a3baf.vcxproj]
+  D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\Debug\cmTC_a3baf.exe : fatal error LNK1120: 1 unresolved externals [D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_a3baf.vcxproj]
+
+    0 Avertissement(s)
+    2 Erreur(s)
+
+Temps ‚coul‚ 00:00:00.31
+
+
+Determining if the function qsort_r exists failed with the following output:
+Change Dir: D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_4f7fe.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Microsoft (R) Build Engine, version 12.0.21005.1
+[Microsoft .NET Framework, Version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+La g‚n‚ration a d‚marr‚ 19/03/2017 18:10:29.
+Projet "D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_4f7fe.vcxproj" sur le noud 1 (cibles par d‚faut).
+PrepareForBuild:
+  Cr‚ation du r‚pertoire "cmTC_4f7fe.dir\Debug\".
+  Cr‚ation du r‚pertoire "D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\Debug\".
+  Cr‚ation du r‚pertoire "cmTC_4f7fe.dir\Debug\cmTC_4f7fe.tlog\".
+InitializeBuildStatus:
+  Cr‚ation de "cmTC_4f7fe.dir\Debug\cmTC_4f7fe.tlog\unsuccessfulbuild", car "AlwaysCreate" a ‚t‚ sp‚cifi‚.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=qsort_r /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_4f7fe.dir\Debug\\" /Fd"cmTC_4f7fe.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.7\Modules\CheckFunctionExists.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.21005.1 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=qsort_r /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_4f7fe.dir\Debug\\" /Fd"cmTC_4f7fe.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.7\Modules\CheckFunctionExists.c"
+  
+  CheckFunctionExists.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\Debug\cmTC_4f7fe.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/build/CMakeFiles/CMakeTmp/Debug/cmTC_4f7fe.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/build/CMakeFiles/CMakeTmp/Debug/cmTC_4f7fe.lib" /MACHINE:X64  /machine:x64 cmTC_4f7fe.dir\Debug\CheckFunctionExists.obj
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol qsort_r referenced in function main [D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_4f7fe.vcxproj]
+D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\Debug\cmTC_4f7fe.exe : fatal error LNK1120: 1 unresolved externals [D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_4f7fe.vcxproj]
+G‚n‚ration du projet "D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_4f7fe.vcxproj" termin‚e (cibles par d‚faut) -- CHEC.
+
+CHEC de la build.
+
+"D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_4f7fe.vcxproj" (cible par d‚faut) (1) ->
+(Link cible) -> 
+  CheckFunctionExists.obj : error LNK2019: unresolved external symbol qsort_r referenced in function main [D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_4f7fe.vcxproj]
+  D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\Debug\cmTC_4f7fe.exe : fatal error LNK1120: 1 unresolved externals [D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\CMakeTmp\cmTC_4f7fe.vcxproj]
+
+    0 Avertissement(s)
+    2 Erreur(s)
+
+Temps ‚coul‚ 00:00:00.30
+
+

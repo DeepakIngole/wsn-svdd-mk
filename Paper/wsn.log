@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.12.1)  21 MAY 2017 19:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.12.1)  21 MAY 2017 22:39
 entering extended mode
 **./wsn.tex
 (wsn.tex
@@ -1215,20 +1215,16 @@ LaTeX Font Info:    Try loading font information for U+txsyc on input line 72.
 
 (D:\Users\trinhvv-admin\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
-)
-Missing character: There is no â in font txr!
-Missing character: There is no ˆ in font txr!
-Missing character: There is no ’ in font txr!
-[1
+) [1
 
 {D:/Users/trinhvv-admin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 <Pictures/ibrl_wsn.png, id=16, 903.375pt x 468.75125pt>
 File: Pictures/ibrl_wsn.png Graphic file (type png)
 
 <use Pictures/ibrl_wsn.png>
-Package pdftex.def Info: Pictures/ibrl_wsn.png used on input line 149.
+Package pdftex.def Info: Pictures/ibrl_wsn.png used on input line 147.
 (pdftex.def)             Requested size: 271.01459pt x 140.62645pt.
- [2 <./Pictures/ibrl_wsn.png (PNG copy)>] (wsn.bbl)
+ (wsn.bbl [2 <./Pictures/ibrl_wsn.png (PNG copy)>])
 [3] (wsn.aux) ) 
 Here is how much of TeX's memory you used:
  25495 strings out of 493335
@@ -1247,7 +1243,7 @@ nts/txex.pfb><D:/Users/trinhvv-admin/AppData/Roaming/MiKTeX/2.9/fonts/type1/pub
 lic/txfonts/txsy.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on wsn.pdf (3 pages, 154449 bytes).
+Output written on wsn.pdf (3 pages, 154061 bytes).
 PDF statistics:
  49 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

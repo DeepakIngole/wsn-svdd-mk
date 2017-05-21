@@ -47,7 +47,7 @@
 
 \begin{frontmatter}
 
-\title{Parameters Optimisation of Support Vector Data Description with Radial Basis Function Kernel for Anomaly Detection in Wireless Sensor Networks}
+\title{Hyperparameters Optimisation of Support Vector Data Description with Radial Basis Function Kernel for Anomaly Detection in Wireless Sensor Networks}
 
 \author[donga]{Van Vuong~Trinh\corref{cor1}}
 \cortext[cor1]{Corresponding author}
@@ -78,8 +78,6 @@ anomaly detection, support vector data description, derivative-free optimization
 In this section, let us briefly describe the support vector data sescription (SVDD) originally derived in \cite{Tax2004} which is an alternative of the known one-class support vector classifiers \cite{Scholkopf2000} and analogous to support vector machines (SVM) \cite{Vapnik1998}.
 
 Given training data
-
-In the following the target objects are enumerated by indices $i$, $j$ and the negative examples by $l$, $m$. For further convenience assume that target objects are labeled $y_i=1$ and outlier objects are labeled $y_l=−1$. Again we allow for errors in both the target and the outlier set and introduce slack variables $\xi_i$ and $\xi_l$.
 
 Primal optimisation which is a quadratically constrained quadratic program (QCQP) (and is equivalent to second-order cone program (SOCP) by trivial changing decision variables):
 \begin{subequations}\label{eq:svdd_primal}
@@ -115,7 +113,7 @@ R^2 = \left( \mathbf{x}_k \cdot \mathbf{x}_k \right) - 2 \sum_i \alpha_i \left( 
 \end{align}
 for any $\mathbf{x}_k \in SV_{<C}$, the set of support vectors which have $\alpha_k < C$.
 
-\section{Parameters Optimisation Algorithm via Bilevel Programming}
+\section{Hyperparameters Optimisation Algorithm via Derivative-Free Programming}
 
 \cite{scholkopf2001estimating}
 

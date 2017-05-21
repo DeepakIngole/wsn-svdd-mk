@@ -22,7 +22,7 @@ humidity=ibrlData{9};
 
 save ibrl_data month date time moteid temperature humidity;
 
-%% Normal Data
+%% Train Data
 clear all;close all;clc;
 load ibrl_data;
 
@@ -58,7 +58,7 @@ for i=[1:54]
     normalData=[normalData;moteData{i}];
 end
 
-save normal_data normalData;
+save train_data normalData;
 
 figure(1);
 for i=[1:54]
@@ -75,7 +75,7 @@ plot(normalData(:,1),normalData(:,2),'*');
 
 %% SVDD Optimisation
 clear all;close all;clc;
-load normal_data normalData;
+load train_data normalData;
 
 % Normalization
 normalizedData=(normalData-repmat(.5*(max(normalData)+min(normalData)),size(normalData,1),1))...
@@ -85,13 +85,14 @@ normalizedData=(normalData-repmat(.5*(max(normalData)+min(normalData)),size(norm
 trainData=consolidator(normalizedData,[],@mean,3e-2);
 trainLabel=ones(size(trainData,1),1);
 
-%
+% Training
 ocSVM.C=[1 0];
-ocSVM.sigma=.5;
+ocSVM.sigma=.7;
 ocSVM.normalizeLB=min(normalData);
 ocSVM.normalizeUB=max(normalData);
 ocSVM=svdd_optimize(ocSVM,trainData,trainLabel);
 
+% Validation
 testData=ocSVM.normalizeLB+rand(1e3,2).*(ocSVM.normalizeUB-ocSVM.normalizeLB);
 predictLabel=svdd_classify(ocSVM,testData);
 
@@ -101,6 +102,30 @@ plot(testData(predictLabel==1,1),testData(predictLabel==1,2),'go','linewidth',2)
 plot(testData(predictLabel==-1,1),testData(predictLabel==-1,2),'ko','linewidth',2);hold on;
 
 save ocsvm_result ocSVM;
+
+%% Time Series Validation
+clear all;close all;clc;
+load ocsvm_result;
+load ibrl_data;
+
+% Extract data given time window
+ibrlData=[month date time moteid temperature humidity];
+% ibrlData(isnan(ibrlData(:,5)),:)=[];
+% ibrlData(isnan(ibrlData(:,6)),:)=[];
+% ibrlData(ibrlData(:,1)~=3,:)=[];  
+% ibrlData(ibrlData(:,2)>15,:)=[];
+ibrlData(:,[1 2 3])=[]; 
+
+% Extract mote data
+for i=11:20
+    moteData{i}=ibrlData(ibrlData(:,1)==i,[2 3]);
+    predictLabel{i}=svdd_classify(ocSVM,moteData{i});
+    figure(i);
+    plot(moteData{i},'b-');hold on;
+    plot(find((predictLabel{i}==-1)),moteData{i}(predictLabel{i}==-1,:),'ro','linewidth',2);
+end
+
+
 
 
 
