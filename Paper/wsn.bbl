@@ -34,6 +34,11 @@ B.~Sch{\"{o}}lkopf, R.~Williamson, A.~Smola, J.~Shawe-Taylor, and
 \bibitem{Vapnik1998}
 V.~N. Vapnik, \emph{{Statistical Learning Theory}}, 1998, vol.~pp.
 
+\bibitem{scholkopf2001estimating}
+B.~Sch{\"o}lkopf, J.~C. Platt, J.~Shawe-Taylor, A.~J. Smola, and R.~C.
+  Williamson, ``Estimating the support of a high-dimensional distribution,''
+  \emph{Neural computation}, vol.~13, no.~7, pp. 1443--1471, 2001.
+
 \bibitem{theissler2013autonomously}
 A.~Theissler and I.~Dear, ``Autonomously determining the parameters for svdd
   with rbf kernel from a one-class training set,'' \emph{World Academy of

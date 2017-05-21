@@ -91,10 +91,10 @@ plot(normalData(:,1),normalData(:,2),'r*');hold on;
 %
 ocSVM.normalizeLB=min(normalData);
 ocSVM.normalizeUB=max(normalData);
-ocSVM=svdd_train(ocSVM,[1/437 0],.3,trainData,trainLabel);
+ocSVM=svdd_optimize(ocSVM,[1/437 0],.3,trainData,trainLabel);
 
 testData=ocSVM.normalizeLB+rand(1e3,2).*(ocSVM.normalizeUB-ocSVM.normalizeLB);
-predictLabel=svdd_classifier(ocSVM,testData);
+predictLabel=svdd_classify(ocSVM,testData);
 
 figure(1);
 plot(testData(predictLabel==1,1),testData(predictLabel==1,2),'go','linewidth',2);hold on;

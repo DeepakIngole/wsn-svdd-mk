@@ -1,4 +1,4 @@
-function ocSVM=svdd_train(ocSVM,C,sigma,trainData,trainLabel)
+function ocSVM=svdd_optimize(ocSVM,C,sigma,trainData,trainLabel)
 
     [N,~]=size(trainData);
     C(1)=1/(length(find(trainLabel==1))*C(1));

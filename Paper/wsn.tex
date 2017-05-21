@@ -98,29 +98,30 @@ Dual optimisation is a standard quadratic program (QP) which can be solved effic
 \underset{
 	\begin{array}{c}
 		 \alpha_i, \alpha_l
-	\end{array}}{\text{Minimize }} & L = \sum_i \alpha_i K \left( \mathbf{x}_i, \mathbf{x}_i \right) - \sum_{i,j} \alpha_i \alpha_j K \left( \mathbf{x}_i, \mathbf{x}_j \right)\\
+	\end{array}}{\text{Minimize }} & L = \sum_i \alpha_i \left( \mathbf{x}_i \cdot \mathbf{x}_i \right) - \sum_{i,j} \alpha_i \alpha_j \left( \mathbf{x}_i \cdot \mathbf{x}_j \right)\\
 \text{Subject to } & \sum_i \alpha_i = 1 \\
 & 0 \le \alpha_i \le C \quad \forall i
 \end{align}
 \end{subequations}
 
-By definition, $R^2$ is the distance from the center of the non-spherical $\mathbf{a}$ to (any of the support vectors on) the boundary. Support vectors which fall outside the description are excluded. Therefore:
-\begin{align}
-R^2 = K \left( \mathbf{x}_k, \mathbf{x}_k \right) - 2 \sum_i \alpha_i K \left( \mathbf{x}_i, \mathbf{x}_k \right) + \sum_{i,j} \alpha_i \alpha_j K \left( \mathbf{x}_i, \mathbf{x}_j \right)
-\end{align}
-for any $\mathbf{x}_k \in SV_{<C_1}$, the set of support vectors which have $\alpha_k < C_1$.
-
 To test an object $\mathbf{z}$, the distance to the center of the sphere has to be calculated. A test
 object $\mathbf{z}$ is accepted when this distance is smaller or equal than the radius:
 \begin{align}
-\left|\left| \mathbf{z} - \mathbf{a} \right|\right|^2 = K \left( \mathbf{z}, \mathbf{z} \right) - 2 \sum_i \alpha_i K \left( \mathbf{z}, \mathbf{x}_i \right) + \sum_{i,j} \alpha_i \alpha_j K \left( \mathbf{x}_i, \mathbf{x}_j \right)
+\left|\left| \mathbf{z} - \mathbf{a} \right|\right|^2 = \left( \mathbf{z} \cdot \mathbf{z} \right) - 2 \sum_i \alpha_i \left( \mathbf{z} \cdot \mathbf{x}_i \right) + \sum_{i,j} \alpha_i \alpha_j \left( \mathbf{x}_i \cdot \mathbf{x}_j \right)
 \end{align}
+
+By definition, $R^2$ is the distance from the center of the non-spherical $\mathbf{a}$ to (any of the support vectors on) the boundary. Support vectors which fall outside the description are excluded. Therefore:
+\begin{align}
+R^2 = \left( \mathbf{x}_k \cdot \mathbf{x}_k \right) - 2 \sum_i \alpha_i \left( \mathbf{x}_i \cdot \mathbf{x}_k \right) + \sum_{i,j} \alpha_i \alpha_j \left( \mathbf{x}_i \cdot \mathbf{x}_j \right)
+\end{align}
+for any $\mathbf{x}_k \in SV_{<C}$, the set of support vectors which have $\alpha_k < C$.
 
 \section{Parameters Optimisation Algorithm via Bilevel Programming}
 
+\cite{scholkopf2001estimating}
+
 \cite{theissler2013autonomously}
 
-Empirical range:
 \begin{align}
 \dfrac{1}{N} \le C \le \min \left( 1, \dfrac{1}{\nu N} \right)
 \end{align}

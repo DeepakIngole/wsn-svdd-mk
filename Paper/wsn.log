@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.12.1)  21 MAY 2017 15:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.12.1)  21 MAY 2017 16:32
 entering extended mode
 **./wsn.tex
 (wsn.tex
@@ -1226,16 +1226,16 @@ Missing character: There is no ’ in font txr!
 File: Pictures/ibrl_wsn.png Graphic file (type png)
 
 <use Pictures/ibrl_wsn.png>
-Package pdftex.def Info: Pictures/ibrl_wsn.png used on input line 136.
+Package pdftex.def Info: Pictures/ibrl_wsn.png used on input line 137.
 (pdftex.def)             Requested size: 271.01459pt x 140.62645pt.
  (wsn.bbl [2 <./Pictures/ibrl_wsn.png (PNG copy)>])
 [3] (wsn.aux) ) 
 Here is how much of TeX's memory you used:
- 25494 strings out of 493335
- 625375 string characters out of 3139236
- 774705 words of memory out of 10000000
- 28524 multiletter control sequences out of 15000+200000
- 43176 words of font info for 109 fonts, out of 3000000 for 9000
+ 25495 strings out of 493335
+ 625457 string characters out of 3139236
+ 775705 words of memory out of 10000000
+ 28527 multiletter control sequences out of 15000+200000
+ 41860 words of font info for 107 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,15n,96p,944b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:
@@ -1247,7 +1247,7 @@ nts/txex.pfb><D:/Users/trinhvv-admin/AppData/Roaming/MiKTeX/2.9/fonts/type1/pub
 lic/txfonts/txsy.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on wsn.pdf (3 pages, 153997 bytes).
+Output written on wsn.pdf (3 pages, 154191 bytes).
 PDF statistics:
  49 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

@@ -1,4 +1,4 @@
-function predictLabel=svdd_classifier(ocSVM,testData)
+function predictLabel=svdd_classify(ocSVM,testData)
 
 sigma=ocSVM.sigma;
 squaredRadius=ocSVM.squaredRadius;

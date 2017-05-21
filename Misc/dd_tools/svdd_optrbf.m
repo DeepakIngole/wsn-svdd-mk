@@ -69,7 +69,7 @@ else
 	opt = optimset('quadprog'); %opt.LargeScale='off';
    opt.Algorithm = 'interior-point-convex';
    opt.Display='off';
-	alf = cplexqp(2.0*D,-f,[],[],A,b,lb,ub,p);
+	alf = quadprog(2.0*D,-f,[],[],A,b,lb,ub,p);
 end
 
 % So we found the alpha's, check the results
