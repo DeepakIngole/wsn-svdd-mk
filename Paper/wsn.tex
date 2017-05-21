@@ -98,9 +98,8 @@ Dual optimisation is a standard quadratic program (QP) which can be solved effic
 \underset{
 	\begin{array}{c}
 		 \alpha_i, \alpha_l
-	\end{array}}{\text{Minimize }} & L = \sum_i \alpha_i \left( \mathbf{x}_i \cdot \mathbf{x}_i \right) - \sum_{i,j} \alpha_i \alpha_j \left( \mathbf{x}_i \cdot \mathbf{x}_j \right)\\
-\text{Subject to } & \sum_i \alpha_i = 1 \\
-& 0 \le \alpha_i \le C \quad \forall i
+	\end{array}}{\text{Maximize }} & L = \sum_i \alpha_i \left( \mathbf{x}_i \cdot \mathbf{x}_i \right) - \sum_{i,j} \alpha_i \alpha_j \left( \mathbf{x}_i \cdot \mathbf{x}_j \right)\\
+\text{Subject to } & 0 \le \alpha_i \le C \quad \forall i
 \end{align}
 \end{subequations}
 
@@ -125,6 +124,19 @@ for any $\mathbf{x}_k \in SV_{<C}$, the set of support vectors which have $\alph
 \begin{align}
 \dfrac{1}{N} \le C \le \min \left( 1, \dfrac{1}{\nu N} \right)
 \end{align}
+
+$\nu$ fraction outlier
+
+\begin{subequations}
+\begin{align}
+\underset{
+	\begin{array}{c}
+		 C, \sigma
+	\end{array}}{\text{Minimize }} & J\left( C, \sigma \right)\\
+\text{Subject to } & \dfrac{1}{N} \le C \le \min \left( 1, \dfrac{1}{\nu N} \right) \\
+& 0 \le \sigma
+\end{align}
+\end{subequations}
 
 \section{Application to Anomaly Detection in a Wireless Sensor Networks}
 

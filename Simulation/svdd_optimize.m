@@ -1,78 +1,60 @@
-function ocSVM=svdd_optimize(ocSVM,C,sigma,trainData,trainLabel)
+function ocSVM=svdd_optimize(ocSVM,trainData,trainLabel)
 
-    [N,~]=size(trainData);
-    C(1)=1/(length(find(trainLabel==1))*C(1));
-    C(2)=1/(length(find(trainLabel==-1))*C(2));
+if ocSVM.C(1)<1/size(trainData,1)
+    ocSVM.C(1)=1/size(trainData,1);
+elseif ocSVM.C(1)>1
+    ocSVM.C(1)=1;
+end
 
-    % Kernel matrix
-    K=exp(-(ones(N,1)*sum(trainData'.*trainData',1)...
-        +sum(trainData.*trainData,2)*ones(1,N)...
-        -2.*trainData*trainData')/(sigma*sigma));
-    
-    % Cost matrices
-    D=(trainLabel*trainLabel').*K;
-    f=trainLabel.*diag(D);
+% Kernel matrix
+K=exp(-(bsxfun(@plus,sum(trainData.^2,2),sum(trainData.^2,2)')...
+    -2*trainData*trainData')/ocSVM.sigma^2);
 
-    % Convexification
-    i=-30;
-    while (pd_check(D+(10.0^i)*eye(N))==0)
+% Cost matrices
+D=(trainLabel*trainLabel').*K;
+f=trainLabel.*diag(D);
+
+% Preprocessing Hessian matrix
+i=-30;
+while 1
+    [~,p]=chol(D+(10^i)*eye(size(trainData,1)));
+    if p==0
+        i=i+5;
+        D=D+(10^i)*eye(size(trainData,1));
+        break;
+    else
         i=i+1;
     end
-    i=i+5;
-    D=D+(10.0^i)*eye(N);
-    
-    % Equality constraints
-    A=trainLabel';
-    b=1.0;
-    
-    % Lower and upper bounds
-    lb=zeros(N,1);
-    ub=lb;
-    ub(trainLabel==1)=C(1);
-    ub(trainLabel==-1)=C(2);
-    
-    % Solve QP
-    alpha=cplexqp(2.0*D,-f,[],[],A,b,lb,ub);
-    alpha=trainLabel.*alpha;
-    
-    % The support vectors and errors
-    I=find(abs(alpha)>1e-8);
-    
-    % Squared radius
-    sphereDistance=-2*sum((ones(N,1)*alpha').*K, 2);
-    border=I((alpha(I)<ub(I))&(alpha(I)>1e-8));
-    if (size(border,1)<1)
-        border=I;
-    end
-    squaredRadius=mean(sphereDistance(border,:));    
-    
-    % Support vectors and alpha
-    alpha(abs(alpha)<1e-8)=0.0;
-    supportVector=trainData(I,:);
-    alpha=alpha(I);
-    
-    % One-class SVM
-    ocSVM.sigma=sigma;
-    ocSVM.squaredRadius=squaredRadius;
-    ocSVM.supportVector=supportVector;
-    ocSVM.alpha=alpha;
-
 end
+D=.5*(D+D');
 
-function posdef=pd_check(a) % Check positive definite property of a matrix
+% Lower and upper bounds
+lb=zeros(size(trainData,1),1);
+ub=lb;
+ub(trainLabel==1)=ocSVM.C(1);
+ub(trainLabel==-1)=ocSVM.C(2);
 
-    n=size(a,1);
-    tol=1e-15;
-    posdef=0;
-    for j=1:n
-        if (j>1)
-            a(j:n,j)=a(j:n,j)-a(j:n,1:j-1)*a(j,1:j-1)';
-        end;
-        if (a(j,j)<tol)
-             return;
-        end;
-        a(j:n,j)=a(j:n,j)/sqrt(a(j,j));
-    end;
-    posdef=1;
+% Solve dual optimisation
+alpha=cplexqp(2*D,-f,[],[],[],[],lb,ub);
+alpha=trainLabel.*alpha;
 
-end
+% Squared radius (without offset)
+sphereDistance=-2*sum((ones(size(trainData,1),1)*alpha').*K, 2);
+squaredRadius=mean(sphereDistance((alpha<ub)&(alpha>1e-8),:));
+
+% Errors and support vectors
+supportVector=trainData(alpha>1e-8,:);  
+alpha=alpha(alpha>1e-8);
+
+% Offset
+offset=1+sum(sum((alpha*alpha').*...
+    exp(-(bsxfun(@plus,sum(alpha.^2,2),sum(alpha.^2,2)')...
+    -2*alpha*alpha')/ocSVM.sigma^2),2));
+
+% One-class SVM
+ocSVM.supportVector=supportVector;
+ocSVM.alpha=alpha;
+ocSVM.squaredRadius=squaredRadius;
+ocSVM.offset=offset;
+ocSVM.threshold=offset+squaredRadius;
+

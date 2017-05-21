@@ -26,10 +26,9 @@ D.~M.~J. Tax and R.~P.~W. Duin, ``{Support Vector Data Description},''
   \emph{Machine Learning}, vol.~54, no.~1, pp. 45--66, 2004.
 
 \bibitem{Scholkopf2000}
-B.~Sch{\"{o}}lkopf, R.~Williamson, A.~Smola, J.~Shawe-Taylor, and
-  J.C.{\~{}}Platt, ``{Support Vector Method for Novelty Detection},''
-  \emph{Advances in Neural Information Processing Systems}, vol.~12, pp.
-  582--588, 2000.
+B.~Sch{\"{o}}lkopf, R.~Williamson, A.~Smola, J.~Shawe-Taylor, and J.~Platt,
+  ``{Support Vector Method for Novelty Detection},'' \emph{Advances in Neural
+  Information Processing Systems}, vol.~12, pp. 582--588, 2000.
 
 \bibitem{Vapnik1998}
 V.~N. Vapnik, \emph{{Statistical Learning Theory}}, 1998, vol.~pp.

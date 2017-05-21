@@ -21,6 +21,7 @@ temperature=ibrlData{8};
 humidity=ibrlData{9};
 
 save ibrl_data month date time moteid temperature humidity;
+
 %% Normal Data
 clear all;close all;clc;
 load ibrl_data;
@@ -59,7 +60,7 @@ end
 
 save normal_data normalData;
 
-figure;
+figure(1);
 for i=[1:54]
     if ~isempty(moteData{i})
         subplot(211);
@@ -69,12 +70,11 @@ for i=[1:54]
     end
 end
 
-figure;
+figure(2);
 plot(normalData(:,1),normalData(:,2),'*');
 
-%% Train SVDD
+%% SVDD Optimisation
 clear all;close all;clc;
-
 load normal_data normalData;
 
 % Normalization
@@ -85,18 +85,18 @@ normalizedData=(normalData-repmat(.5*(max(normalData)+min(normalData)),size(norm
 trainData=consolidator(normalizedData,[],@mean,3e-2);
 trainLabel=ones(size(trainData,1),1);
 
-figure(1);
-plot(normalData(:,1),normalData(:,2),'r*');hold on;
-
 %
+ocSVM.C=[1 0];
+ocSVM.sigma=.5;
 ocSVM.normalizeLB=min(normalData);
 ocSVM.normalizeUB=max(normalData);
-ocSVM=svdd_optimize(ocSVM,[1/437 0],.3,trainData,trainLabel);
+ocSVM=svdd_optimize(ocSVM,trainData,trainLabel);
 
 testData=ocSVM.normalizeLB+rand(1e3,2).*(ocSVM.normalizeUB-ocSVM.normalizeLB);
 predictLabel=svdd_classify(ocSVM,testData);
 
 figure(1);
+plot(normalData(:,1),normalData(:,2),'r*');hold on;
 plot(testData(predictLabel==1,1),testData(predictLabel==1,2),'go','linewidth',2);hold on;
 plot(testData(predictLabel==-1,1),testData(predictLabel==-1,2),'ko','linewidth',2);hold on;
 

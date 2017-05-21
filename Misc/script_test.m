@@ -23,6 +23,6 @@ hold on;
 scatterd(a);
 
 %
-w = svdd(a,1e-3,.3);
+w = svdd(a,1/437,.5);
 plotc(w,'r--');hold on;
 
