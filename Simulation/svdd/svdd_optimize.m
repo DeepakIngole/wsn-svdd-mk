@@ -1,16 +1,10 @@
 function ocSVM=svdd_optimize(ocSVM,trainData,trainLabel)
 
-if ocSVM.C(1)<1/size(trainData,1)
-    ocSVM.C(1)=1/size(trainData,1);
-elseif ocSVM.C(1)>1
-    ocSVM.C(1)=1;
-end
-
-% Kernel matrix
-K=exp(-(bsxfun(@plus,sum(trainData.^2,2),sum(trainData.^2,2)')...
-    -2*trainData*trainData')/ocSVM.sigma^2);
+ocSVM.C(1)=min(1,max(1/size(trainData,1),ocSVM.C(1)));
 
 % Cost matrices
+K=exp(-(bsxfun(@plus,sum(trainData.^2,2),sum(trainData.^2,2)')...
+    -2*trainData*trainData')/ocSVM.sigma^2);
 D=(trainLabel*trainLabel').*K;
 f=trainLabel.*diag(D);
 
@@ -38,7 +32,9 @@ ub(trainLabel==-1)=ocSVM.C(2);
 try % use CPLEX if installed
     alpha=cplexqp(2*D,-f,[],[],[],[],lb,ub); 
 catch % otherwise use quadprog (not recommended)
-    alpha=quadprog(2*D,-f,[],[],[],[],lb,ub); 
+    options=optimoptions('quadprog',...
+        'Algorithm','trust-region-reflective','Display','off');
+    alpha=quadprog(2*D,-f,[],[],[],[],lb,ub,[],options); 
 end
 alpha=trainLabel.*alpha;
 
@@ -50,15 +46,8 @@ squaredRadius=mean(sphereDistance((alpha<ub)&(alpha>1e-8),:));
 supportVector=trainData(alpha>1e-8,:);  
 alpha=alpha(alpha>1e-8);
 
-% Offset
-offset=1+sum(sum((alpha*alpha').*...
-    exp(-(bsxfun(@plus,sum(alpha.^2,2),sum(alpha.^2,2)')...
-    -2*alpha*alpha')/ocSVM.sigma^2),2));
-
 % One-class SVM
 ocSVM.supportVector=supportVector;
 ocSVM.alpha=alpha;
 ocSVM.squaredRadius=squaredRadius;
-ocSVM.offset=offset;
-ocSVM.threshold=offset+squaredRadius;
 

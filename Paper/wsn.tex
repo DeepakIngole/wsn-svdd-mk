@@ -73,9 +73,11 @@ anomaly detection, support vector data description, derivative-free optimization
 
 \section{Introduction}
 
+Similar to other kernel methods, the performance of SVDD models is strongly affected by the kernel parameters.
+
 \section{Support Vector Data Description with Radial Basis Function Kernel}
 
-In this section, let us briefly describe the support vector data sescription (SVDD) originally derived in \cite{Tax2004} which is an alternative of the known one-class support vector classifiers \cite{Scholkopf2000} and analogous to support vector machines (SVM) \cite{Vapnik1998}.
+In this section, let us briefly describe the support vector data sescription (SVDD) originally derived in \cite{Tax2004} which is an alternative of the known one-class support vector machines (OCSVM) \cite{Scholkopf2000} and analogous to support vector machines (SVM) \cite{Vapnik1998}.
 
 Given training data
 
@@ -95,7 +97,7 @@ Dual optimisation is a standard quadratic program (QP) which can be solved effic
 \begin{align}
 \underset{
 	\begin{array}{c}
-		 \alpha_i, \alpha_l
+		 \alpha_i
 	\end{array}}{\text{Maximize }} & L = \sum_i \alpha_i \left( \mathbf{x}_i \cdot \mathbf{x}_i \right) - \sum_{i,j} \alpha_i \alpha_j \left( \mathbf{x}_i \cdot \mathbf{x}_j \right)\\
 \text{Subject to } & 0 \le \alpha_i \le C \quad \forall i
 \end{align}
@@ -113,11 +115,11 @@ R^2 = \left( \mathbf{x}_k \cdot \mathbf{x}_k \right) - 2 \sum_i \alpha_i \left( 
 \end{align}
 for any $\mathbf{x}_k \in SV_{<C}$, the set of support vectors which have $\alpha_k < C$.
 
-\section{Hyperparameters Optimisation Algorithm via Derivative-Free Programming}
+\section{Hyperparameters Optimisation Algorithm}
 
 \cite{scholkopf2001estimating}
 
-\cite{theissler2013autonomously}
+\cite{Xiao2015}
 
 \begin{align}
 \dfrac{1}{N} \le C \le \min \left( 1, \dfrac{1}{\nu N} \right)
