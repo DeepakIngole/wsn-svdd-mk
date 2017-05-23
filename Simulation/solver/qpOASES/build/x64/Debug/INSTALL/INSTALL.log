@@ -1,0 +1,50 @@
+﻿Build started 25/03/2017 10:46:24.
+     1>Project "D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\build\INSTALL.vcxproj" on node 2 (Build target(s)).
+     1>PostBuildEvent:
+         setlocal
+         "C:\Program Files\CMake\bin\cmake.exe" -DBUILD_TYPE=Debug -P cmake_install.cmake
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         :VCEnd
+         -- Install configuration: "Debug"
+         -- Installing: /lib/qpOASES.lib
+         -- Installing: /include/qpOASES.hpp
+         -- Installing: /include/qpOASES
+         -- Installing: /include/qpOASES/Bounds.hpp
+         -- Installing: /include/qpOASES/Bounds.ipp
+         -- Installing: /include/qpOASES/Constants.hpp
+         -- Installing: /include/qpOASES/ConstraintProduct.hpp
+         -- Installing: /include/qpOASES/Constraints.hpp
+         -- Installing: /include/qpOASES/Constraints.ipp
+         -- Installing: /include/qpOASES/extras
+         -- Installing: /include/qpOASES/extras/OQPinterface.hpp
+         -- Installing: /include/qpOASES/extras/SolutionAnalysis.hpp
+         -- Installing: /include/qpOASES/extras/SolutionAnalysis.ipp
+         -- Installing: /include/qpOASES/Flipper.hpp
+         -- Installing: /include/qpOASES/Indexlist.hpp
+         -- Installing: /include/qpOASES/Indexlist.ipp
+         -- Installing: /include/qpOASES/Matrices.hpp
+         -- Installing: /include/qpOASES/MessageHandling.hpp
+         -- Installing: /include/qpOASES/MessageHandling.ipp
+         -- Installing: /include/qpOASES/Options.hpp
+         -- Installing: /include/qpOASES/QProblem.hpp
+         -- Installing: /include/qpOASES/QProblem.ipp
+         -- Installing: /include/qpOASES/QProblemB.hpp
+         -- Installing: /include/qpOASES/QProblemB.ipp
+         -- Installing: /include/qpOASES/SQProblem.hpp
+         -- Installing: /include/qpOASES/SQProblem.ipp
+         -- Installing: /include/qpOASES/SubjectTo.hpp
+         -- Installing: /include/qpOASES/SubjectTo.ipp
+         -- Installing: /include/qpOASES/Types.hpp
+         -- Installing: /include/qpOASES/Utils.hpp
+         -- Installing: /include/qpOASES/Utils.ipp
+     1>Done Building Project "D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\build\INSTALL.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.24

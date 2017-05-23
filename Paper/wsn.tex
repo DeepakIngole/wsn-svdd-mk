@@ -92,14 +92,15 @@ Primal optimisation which is a quadratically constrained quadratic program (QCQP
 \end{align}
 \end{subequations}
 
-Dual optimisation is a standard quadratic program (QP) which can be solved efficiently.
+Given $C \ge \dfrac{1}{N}$. Dual optimisation is a standard quadratic program (QP) which can be solved efficiently.
 \begin{subequations}\label{eq:svdd_dual}
 \begin{align}
 \underset{
 	\begin{array}{c}
 		 \alpha_i
 	\end{array}}{\text{Maximize }} & L = \sum_i \alpha_i \left( \mathbf{x}_i \cdot \mathbf{x}_i \right) - \sum_{i,j} \alpha_i \alpha_j \left( \mathbf{x}_i \cdot \mathbf{x}_j \right)\\
-\text{Subject to } & 0 \le \alpha_i \le C \quad \forall i
+\text{Subject to } & \sum_i \alpha_i = 1\\
+& 0 \le \alpha_i \le C \quad \forall i
 \end{align}
 \end{subequations}
 
@@ -115,7 +116,9 @@ R^2 = \left( \mathbf{x}_k \cdot \mathbf{x}_k \right) - 2 \sum_i \alpha_i \left( 
 \end{align}
 for any $\mathbf{x}_k \in SV_{<C}$, the set of support vectors which have $\alpha_k < C$.
 
-\section{Hyperparameters Optimisation Algorithm}
+\section{Hyperparameters Selection via Derivative-Free Optimisation}
+
+\subsection{Objective Function for Optimisation}
 
 \cite{scholkopf2001estimating}
 
@@ -139,6 +142,8 @@ $\nu$ fraction outlier
 \end{subequations}
 
 \section{Application to Anomaly Detection in a Wireless Sensor Networks}
+
+\cite{Suthaharan2010}
 
 \subsection{Intel Berkeley Research Laboratory Data}
 

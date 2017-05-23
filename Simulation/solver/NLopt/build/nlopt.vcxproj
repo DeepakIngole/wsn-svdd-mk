@@ -1,0 +1,583 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{ADFDBAF6-25C8-33FC-8242-2D9F3BC42140}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>nlopt</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">nlopt.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">nlopt-0</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">nlopt.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">nlopt-0</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">nlopt.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">nlopt-0</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">nlopt.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">nlopt-0</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\stogo;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\util;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\direct;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\cdirect;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\praxis;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\luksan;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\crs;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\mlsl;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\mma;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\cobyla;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\newuoa;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\neldermead;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\auglag;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\bobyqa;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\isres;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\slsqp;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\esch;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;NLOPT_DLL;NLOPT_DLL_EXPORT;CMAKE_INTDIR="Debug";nlopt_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;NLOPT_DLL;NLOPT_DLL_EXPORT;CMAKE_INTDIR=\"Debug\";nlopt_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\stogo;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\util;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\direct;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\cdirect;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\praxis;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\luksan;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\crs;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\mlsl;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\mma;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\cobyla;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\newuoa;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\neldermead;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\auglag;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\bobyqa;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\isres;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\slsqp;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\esch;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\stogo;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\util;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\direct;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\cdirect;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\praxis;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\luksan;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\crs;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\mlsl;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\mma;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\cobyla;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\newuoa;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\neldermead;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\auglag;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\bobyqa;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\isres;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\slsqp;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\esch;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/build/Debug/nlopt.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/build/Debug/nlopt.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\stogo;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\util;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\direct;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\cdirect;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\praxis;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\luksan;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\crs;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\mlsl;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\mma;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\cobyla;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\newuoa;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\neldermead;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\auglag;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\bobyqa;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\isres;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\slsqp;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\esch;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NLOPT_DLL;NLOPT_DLL_EXPORT;CMAKE_INTDIR="Release";nlopt_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NLOPT_DLL;NLOPT_DLL_EXPORT;CMAKE_INTDIR=\"Release\";nlopt_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\stogo;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\util;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\direct;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\cdirect;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\praxis;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\luksan;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\crs;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\mlsl;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\mma;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\cobyla;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\newuoa;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\neldermead;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\auglag;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\bobyqa;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\isres;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\slsqp;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\esch;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\stogo;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\util;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\direct;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\cdirect;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\praxis;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\luksan;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\crs;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\mlsl;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\mma;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\cobyla;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\newuoa;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\neldermead;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\auglag;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\bobyqa;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\isres;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\slsqp;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\esch;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/build/Release/nlopt.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/build/Release/nlopt.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\stogo;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\util;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\direct;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\cdirect;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\praxis;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\luksan;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\crs;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\mlsl;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\mma;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\cobyla;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\newuoa;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\neldermead;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\auglag;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\bobyqa;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\isres;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\slsqp;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\esch;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NLOPT_DLL;NLOPT_DLL_EXPORT;CMAKE_INTDIR="MinSizeRel";nlopt_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NLOPT_DLL;NLOPT_DLL_EXPORT;CMAKE_INTDIR=\"MinSizeRel\";nlopt_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\stogo;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\util;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\direct;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\cdirect;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\praxis;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\luksan;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\crs;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\mlsl;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\mma;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\cobyla;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\newuoa;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\neldermead;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\auglag;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\bobyqa;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\isres;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\slsqp;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\esch;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\stogo;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\util;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\direct;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\cdirect;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\praxis;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\luksan;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\crs;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\mlsl;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\mma;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\cobyla;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\newuoa;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\neldermead;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\auglag;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\bobyqa;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\isres;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\slsqp;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\esch;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/build/MinSizeRel/nlopt.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/build/MinSizeRel/nlopt.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\stogo;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\util;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\direct;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\cdirect;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\praxis;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\luksan;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\crs;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\mlsl;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\mma;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\cobyla;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\newuoa;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\neldermead;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\auglag;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\bobyqa;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\isres;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\slsqp;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\esch;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NLOPT_DLL;NLOPT_DLL_EXPORT;CMAKE_INTDIR="RelWithDebInfo";nlopt_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NLOPT_DLL;NLOPT_DLL_EXPORT;CMAKE_INTDIR=\"RelWithDebInfo\";nlopt_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\stogo;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\util;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\direct;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\cdirect;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\praxis;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\luksan;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\crs;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\mlsl;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\mma;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\cobyla;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\newuoa;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\neldermead;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\auglag;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\bobyqa;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\isres;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\slsqp;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\esch;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\stogo;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\util;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\direct;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\cdirect;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\praxis;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\luksan;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\crs;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\mlsl;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\mma;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\cobyla;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\newuoa;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\neldermead;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\auglag;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\bobyqa;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\isres;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\slsqp;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\esch;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/build/RelWithDebInfo/nlopt.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/build/RelWithDebInfo/nlopt.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/nlopt-2.4.2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-HD:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/nlopt-2.4.2" "-BD:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/build" --check-stamp-file "D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/nlopt-2.4.2/CMakeLists.txt;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\CMakeLists.txt;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\3.7.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\3.7.2\CMakeCCompiler.cmake;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\3.7.2\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\3.7.2\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFileCXX.cmake;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\config.cmake.h.in;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/nlopt-2.4.2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-HD:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/nlopt-2.4.2" "-BD:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/build" --check-stamp-file "D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/nlopt-2.4.2/CMakeLists.txt;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\CMakeLists.txt;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\3.7.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\3.7.2\CMakeCCompiler.cmake;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\3.7.2\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\3.7.2\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFileCXX.cmake;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\config.cmake.h.in;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/nlopt-2.4.2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-HD:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/nlopt-2.4.2" "-BD:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/build" --check-stamp-file "D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/nlopt-2.4.2/CMakeLists.txt;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\CMakeLists.txt;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\3.7.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\3.7.2\CMakeCCompiler.cmake;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\3.7.2\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\3.7.2\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFileCXX.cmake;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\config.cmake.h.in;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/nlopt-2.4.2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-HD:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/nlopt-2.4.2" "-BD:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/build" --check-stamp-file "D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/nlopt-2.4.2/CMakeLists.txt;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\CMakeLists.txt;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\3.7.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\3.7.2\CMakeCCompiler.cmake;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\3.7.2\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\3.7.2\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CheckIncludeFileCXX.cmake;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\config.cmake.h.in;D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\direct\direct-internal.h" />
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\direct\direct.h" />
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\cdirect\cdirect.h" />
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\praxis\praxis.h" />
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\luksan\luksan.h" />
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\crs\crs.h" />
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\mlsl\mlsl.h" />
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\mma\mma.h" />
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\cobyla\cobyla.h" />
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\newuoa\newuoa.h" />
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\neldermead\neldermead.h" />
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\auglag\auglag.h" />
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\bobyqa\bobyqa.h" />
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\isres\isres.h" />
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\slsqp\slsqp.h" />
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\esch\esch.h" />
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\api\nlopt-internal.h" />
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\api\nlopt.h" />
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\api\f77funcs.h" />
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\api\f77funcs_.h" />
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\api\nlopt.hpp" />
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\api\nlopt-in.hpp" />
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\util\soboldata.h" />
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\util\nlopt-util.h" />
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\util\redblack.h" />
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\stogo\global.h" />
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\stogo\linalg.h" />
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\stogo\local.h" />
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\stogo\stogo_config.h" />
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\stogo\stogo.h" />
+    <ClInclude Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\stogo\tools.h" />
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\direct\DIRect.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\direct\direct_wrap.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\direct\DIRserial.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\direct\DIRsubrout.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\cdirect\cdirect.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\cdirect\hybrid.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\praxis\praxis.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\luksan\plis.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\luksan\plip.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\luksan\pnet.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\luksan\mssubs.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\luksan\pssubs.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\crs\crs.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\mlsl\mlsl.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\mma\mma.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\mma\ccsa_quadratic.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\cobyla\cobyla.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\newuoa\newuoa.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\neldermead\nldrmd.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\neldermead\sbplx.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\auglag\auglag.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\bobyqa\bobyqa.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\isres\isres.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\slsqp\slsqp.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\esch\esch.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\api\general.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\api\options.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\api\optimize.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\api\deprecated.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\api\f77api.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\util\mt19937ar.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\util\sobolseq.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\util\timer.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\util\stop.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\util\redblack.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\util\qsort_r.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\util\rescale.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\stogo\global.cc"  />
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\stogo\linalg.cc"  />
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\stogo\local.cc"  />
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\stogo\stogo.cc"  />
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solvers\NLopt\nlopt-2.4.2\stogo\tools.cc"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/PhD/CB/02 Distributed MPC/libs/solvers/NLopt/build/ZERO_CHECK.vcxproj">
+      <Project>3427CE9F-3842-3FCD-8703-D5F8CF3AD127</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,5 @@
+C:/Program Files/NLOPT/include/nlopt.h
+C:/Program Files/NLOPT/include/nlopt.hpp
+C:/Program Files/NLOPT/include/nlopt.f
+C:/Program Files/NLOPT/lib/nlopt.lib
+C:/Program Files/NLOPT/bin/nlopt-0.dll

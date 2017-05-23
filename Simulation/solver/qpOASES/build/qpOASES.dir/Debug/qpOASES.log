@@ -1,0 +1,576 @@
+﻿Build started 25/03/2017 10:46:14.
+     1>Project "D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\build\qpOASES.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/PhD/CB/02 Distributed MPC/libs/solver/qpOASES/CMakeLists.txt
+         CMake does not need to re-run because D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\build\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include" /Zi /nologo /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D __NO_COPYRIGHT__ /D _DEBUG /D __DEBUG__ /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"qpOASES.dir\Debug\\" /Fd"qpOASES.dir\Debug\vc120.pdb" /Gd /TP /errorReport:prompt "D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\BLASReplacement.cpp" "D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Bounds.cpp" "D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Constraints.cpp" "D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Flipper.cpp" "D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Indexlist.cpp" "D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\LAPACKReplacement.cpp" "D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Matrices.cpp" "D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\MessageHandling.cpp" "D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\OQPinterface.cpp" "D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp" "D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblem.cpp" "D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblemB.cpp" "D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\SQProblem.cpp" "D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\SolutionAnalysis.cpp" "D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\SubjectTo.cpp" "D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp"
+         BLASReplacement.cpp
+         Bounds.cpp
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Bounds.cpp(418): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+         Constraints.cpp
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Constraints.cpp(402): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+         Flipper.cpp
+         Indexlist.cpp
+         LAPACKReplacement.cpp
+         Matrices.cpp
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::free' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(311) : see declaration of 'qpOASES::DenseMatrix::free'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::diag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(319) : see declaration of 'qpOASES::DenseMatrix::diag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::isDiag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(325) : see declaration of 'qpOASES::DenseMatrix::isDiag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::getNorm' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(330) : see declaration of 'qpOASES::DenseMatrix::getNorm'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::getRowNorm' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(335) : see declaration of 'qpOASES::DenseMatrix::getRowNorm'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::getRow' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(339) : see declaration of 'qpOASES::DenseMatrix::getRow'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::getCol' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(348) : see declaration of 'qpOASES::DenseMatrix::getCol'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::times' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(379) : see declaration of 'qpOASES::DenseMatrix::times'
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(357) : see declaration of 'qpOASES::DenseMatrix::times'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::transTimes' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(393) : see declaration of 'qpOASES::DenseMatrix::transTimes'
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(368) : see declaration of 'qpOASES::DenseMatrix::transTimes'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::addToDiag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(407) : see declaration of 'qpOASES::DenseMatrix::addToDiag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::print' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(412) : see declaration of 'qpOASES::DenseMatrix::print'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::free' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(499) : see declaration of 'qpOASES::SparseMatrix::free'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::diag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(507) : see declaration of 'qpOASES::SparseMatrix::diag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::isDiag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(513) : see declaration of 'qpOASES::SparseMatrix::isDiag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::getNorm' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(519) : see declaration of 'qpOASES::SparseMatrix::getNorm'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::getRowNorm' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(524) : see declaration of 'qpOASES::SparseMatrix::getRowNorm'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::getRow' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(527) : see declaration of 'qpOASES::SparseMatrix::getRow'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::getCol' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(535) : see declaration of 'qpOASES::SparseMatrix::getCol'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::times' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(563) : see declaration of 'qpOASES::SparseMatrix::times'
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(543) : see declaration of 'qpOASES::SparseMatrix::times'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::transTimes' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(576) : see declaration of 'qpOASES::SparseMatrix::transTimes'
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(553) : see declaration of 'qpOASES::SparseMatrix::transTimes'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::addToDiag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(590) : see declaration of 'qpOASES::SparseMatrix::addToDiag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::print' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(603) : see declaration of 'qpOASES::SparseMatrix::print'
+         MessageHandling.cpp
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\MessageHandling.cpp(408): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\MessageHandling.cpp(477): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\MessageHandling.cpp(486): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\MessageHandling.cpp(499): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+         OQPinterface.cpp
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::free' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(311) : see declaration of 'qpOASES::DenseMatrix::free'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::diag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(319) : see declaration of 'qpOASES::DenseMatrix::diag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::isDiag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(325) : see declaration of 'qpOASES::DenseMatrix::isDiag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::getNorm' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(330) : see declaration of 'qpOASES::DenseMatrix::getNorm'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::getRowNorm' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(335) : see declaration of 'qpOASES::DenseMatrix::getRowNorm'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::getRow' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(339) : see declaration of 'qpOASES::DenseMatrix::getRow'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::getCol' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(348) : see declaration of 'qpOASES::DenseMatrix::getCol'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::times' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(379) : see declaration of 'qpOASES::DenseMatrix::times'
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(357) : see declaration of 'qpOASES::DenseMatrix::times'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::transTimes' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(393) : see declaration of 'qpOASES::DenseMatrix::transTimes'
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(368) : see declaration of 'qpOASES::DenseMatrix::transTimes'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::addToDiag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(407) : see declaration of 'qpOASES::DenseMatrix::addToDiag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::print' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(412) : see declaration of 'qpOASES::DenseMatrix::print'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::free' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(499) : see declaration of 'qpOASES::SparseMatrix::free'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::diag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(507) : see declaration of 'qpOASES::SparseMatrix::diag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::isDiag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(513) : see declaration of 'qpOASES::SparseMatrix::isDiag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::getNorm' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(519) : see declaration of 'qpOASES::SparseMatrix::getNorm'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::getRowNorm' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(524) : see declaration of 'qpOASES::SparseMatrix::getRowNorm'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::getRow' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(527) : see declaration of 'qpOASES::SparseMatrix::getRow'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::getCol' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(535) : see declaration of 'qpOASES::SparseMatrix::getCol'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::times' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(563) : see declaration of 'qpOASES::SparseMatrix::times'
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(543) : see declaration of 'qpOASES::SparseMatrix::times'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::transTimes' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(576) : see declaration of 'qpOASES::SparseMatrix::transTimes'
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(553) : see declaration of 'qpOASES::SparseMatrix::transTimes'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::addToDiag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(590) : see declaration of 'qpOASES::SparseMatrix::addToDiag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::print' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(603) : see declaration of 'qpOASES::SparseMatrix::print'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\OQPinterface.cpp(54): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\OQPinterface.cpp(104): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\OQPinterface.cpp(113): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\OQPinterface.cpp(122): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\OQPinterface.cpp(131): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\OQPinterface.cpp(142): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\OQPinterface.cpp(152): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\OQPinterface.cpp(162): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\OQPinterface.cpp(181): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\OQPinterface.cpp(195): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\OQPinterface.cpp(210): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\OQPinterface.cpp(249): warning C4244: '=' : conversion from 'qpOASES::real_t' to 'int', possible loss of data
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\OQPinterface.cpp(414): warning C4244: '=' : conversion from 'qpOASES::real_t' to 'int', possible loss of data
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\OQPinterface.cpp(565): warning C4244: '=' : conversion from 'qpOASES::real_t' to 'int', possible loss of data
+         Options.cpp
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp(283): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp(289): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp(293): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp(297): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp(301): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp(305): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp(309): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp(312): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp(315): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp(319): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp(324): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp(327): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp(330): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp(333): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp(336): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp(339): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp(342): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp(347): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp(350): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp(353): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp(356): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp(360): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp(363): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp(366): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp(369): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp(372): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp(375): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp(378): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp(381): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+         QProblem.cpp
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::free' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(311) : see declaration of 'qpOASES::DenseMatrix::free'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::diag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(319) : see declaration of 'qpOASES::DenseMatrix::diag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::isDiag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(325) : see declaration of 'qpOASES::DenseMatrix::isDiag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::getNorm' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(330) : see declaration of 'qpOASES::DenseMatrix::getNorm'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::getRowNorm' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(335) : see declaration of 'qpOASES::DenseMatrix::getRowNorm'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::getRow' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(339) : see declaration of 'qpOASES::DenseMatrix::getRow'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::getCol' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(348) : see declaration of 'qpOASES::DenseMatrix::getCol'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::times' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(379) : see declaration of 'qpOASES::DenseMatrix::times'
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(357) : see declaration of 'qpOASES::DenseMatrix::times'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::transTimes' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(393) : see declaration of 'qpOASES::DenseMatrix::transTimes'
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(368) : see declaration of 'qpOASES::DenseMatrix::transTimes'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::addToDiag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(407) : see declaration of 'qpOASES::DenseMatrix::addToDiag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::print' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(412) : see declaration of 'qpOASES::DenseMatrix::print'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::free' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(499) : see declaration of 'qpOASES::SparseMatrix::free'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::diag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(507) : see declaration of 'qpOASES::SparseMatrix::diag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::isDiag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(513) : see declaration of 'qpOASES::SparseMatrix::isDiag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::getNorm' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(519) : see declaration of 'qpOASES::SparseMatrix::getNorm'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::getRowNorm' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(524) : see declaration of 'qpOASES::SparseMatrix::getRowNorm'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::getRow' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(527) : see declaration of 'qpOASES::SparseMatrix::getRow'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::getCol' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(535) : see declaration of 'qpOASES::SparseMatrix::getCol'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::times' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(563) : see declaration of 'qpOASES::SparseMatrix::times'
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(543) : see declaration of 'qpOASES::SparseMatrix::times'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::transTimes' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(576) : see declaration of 'qpOASES::SparseMatrix::transTimes'
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(553) : see declaration of 'qpOASES::SparseMatrix::transTimes'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::addToDiag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(590) : see declaration of 'qpOASES::SparseMatrix::addToDiag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::print' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(603) : see declaration of 'qpOASES::SparseMatrix::print'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblem.cpp(1146): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblem.cpp(1163): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblem.cpp(1166): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblem.cpp(1169): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblem.cpp(1749): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblem.cpp(1991): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblem.cpp(3348): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblem.cpp(3364): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblem.cpp(3822): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblem.cpp(3838): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblem.cpp(5380): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblem.cpp(5382): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblem.cpp(5455): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblem.cpp(5486): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblem.cpp(5498): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblem.cpp(5517): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblem.cpp(5519): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblem.cpp(5533): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblem.cpp(5535): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblem.cpp(6150): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblem.cpp(6161): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblem.cpp(6163): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblem.cpp(6165): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblem.cpp(6171): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblem.cpp(6173): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblem.cpp(6176): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblem.cpp(6178): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblem.cpp(6180): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+         QProblemB.cpp
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::free' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(311) : see declaration of 'qpOASES::DenseMatrix::free'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::diag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(319) : see declaration of 'qpOASES::DenseMatrix::diag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::isDiag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(325) : see declaration of 'qpOASES::DenseMatrix::isDiag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::getNorm' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(330) : see declaration of 'qpOASES::DenseMatrix::getNorm'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::getRowNorm' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(335) : see declaration of 'qpOASES::DenseMatrix::getRowNorm'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::getRow' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(339) : see declaration of 'qpOASES::DenseMatrix::getRow'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::getCol' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(348) : see declaration of 'qpOASES::DenseMatrix::getCol'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::times' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(379) : see declaration of 'qpOASES::DenseMatrix::times'
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(357) : see declaration of 'qpOASES::DenseMatrix::times'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::transTimes' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(393) : see declaration of 'qpOASES::DenseMatrix::transTimes'
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(368) : see declaration of 'qpOASES::DenseMatrix::transTimes'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::addToDiag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(407) : see declaration of 'qpOASES::DenseMatrix::addToDiag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::print' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(412) : see declaration of 'qpOASES::DenseMatrix::print'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::free' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(499) : see declaration of 'qpOASES::SparseMatrix::free'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::diag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(507) : see declaration of 'qpOASES::SparseMatrix::diag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::isDiag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(513) : see declaration of 'qpOASES::SparseMatrix::isDiag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::getNorm' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(519) : see declaration of 'qpOASES::SparseMatrix::getNorm'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::getRowNorm' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(524) : see declaration of 'qpOASES::SparseMatrix::getRowNorm'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::getRow' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(527) : see declaration of 'qpOASES::SparseMatrix::getRow'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::getCol' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(535) : see declaration of 'qpOASES::SparseMatrix::getCol'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::times' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(563) : see declaration of 'qpOASES::SparseMatrix::times'
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(543) : see declaration of 'qpOASES::SparseMatrix::times'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::transTimes' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(576) : see declaration of 'qpOASES::SparseMatrix::transTimes'
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(553) : see declaration of 'qpOASES::SparseMatrix::transTimes'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::addToDiag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(590) : see declaration of 'qpOASES::SparseMatrix::addToDiag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::print' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(603) : see declaration of 'qpOASES::SparseMatrix::print'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblemB.cpp(1030): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblemB.cpp(2432): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblemB.cpp(2580): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblemB.cpp(3240): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblemB.cpp(3242): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblemB.cpp(3277): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblemB.cpp(3305): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblemB.cpp(3320): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblemB.cpp(3322): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblemB.cpp(3630): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblemB.cpp(3641): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblemB.cpp(3643): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblemB.cpp(3651): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblemB.cpp(3653): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblemB.cpp(3655): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+         SQProblem.cpp
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::free' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(311) : see declaration of 'qpOASES::DenseMatrix::free'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::diag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(319) : see declaration of 'qpOASES::DenseMatrix::diag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::isDiag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(325) : see declaration of 'qpOASES::DenseMatrix::isDiag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::getNorm' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(330) : see declaration of 'qpOASES::DenseMatrix::getNorm'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::getRowNorm' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(335) : see declaration of 'qpOASES::DenseMatrix::getRowNorm'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::getRow' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(339) : see declaration of 'qpOASES::DenseMatrix::getRow'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::getCol' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(348) : see declaration of 'qpOASES::DenseMatrix::getCol'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::times' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(379) : see declaration of 'qpOASES::DenseMatrix::times'
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(357) : see declaration of 'qpOASES::DenseMatrix::times'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::transTimes' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(393) : see declaration of 'qpOASES::DenseMatrix::transTimes'
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(368) : see declaration of 'qpOASES::DenseMatrix::transTimes'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::addToDiag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(407) : see declaration of 'qpOASES::DenseMatrix::addToDiag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::print' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(412) : see declaration of 'qpOASES::DenseMatrix::print'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::free' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(499) : see declaration of 'qpOASES::SparseMatrix::free'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::diag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(507) : see declaration of 'qpOASES::SparseMatrix::diag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::isDiag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(513) : see declaration of 'qpOASES::SparseMatrix::isDiag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::getNorm' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(519) : see declaration of 'qpOASES::SparseMatrix::getNorm'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::getRowNorm' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(524) : see declaration of 'qpOASES::SparseMatrix::getRowNorm'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::getRow' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(527) : see declaration of 'qpOASES::SparseMatrix::getRow'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::getCol' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(535) : see declaration of 'qpOASES::SparseMatrix::getCol'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::times' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(563) : see declaration of 'qpOASES::SparseMatrix::times'
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(543) : see declaration of 'qpOASES::SparseMatrix::times'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::transTimes' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(576) : see declaration of 'qpOASES::SparseMatrix::transTimes'
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(553) : see declaration of 'qpOASES::SparseMatrix::transTimes'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::addToDiag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(590) : see declaration of 'qpOASES::SparseMatrix::addToDiag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::print' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(603) : see declaration of 'qpOASES::SparseMatrix::print'
+         SolutionAnalysis.cpp
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::free' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(311) : see declaration of 'qpOASES::DenseMatrix::free'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::diag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(319) : see declaration of 'qpOASES::DenseMatrix::diag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::isDiag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(325) : see declaration of 'qpOASES::DenseMatrix::isDiag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::getNorm' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(330) : see declaration of 'qpOASES::DenseMatrix::getNorm'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::getRowNorm' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(335) : see declaration of 'qpOASES::DenseMatrix::getRowNorm'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::getRow' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(339) : see declaration of 'qpOASES::DenseMatrix::getRow'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::getCol' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(348) : see declaration of 'qpOASES::DenseMatrix::getCol'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::times' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(379) : see declaration of 'qpOASES::DenseMatrix::times'
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(357) : see declaration of 'qpOASES::DenseMatrix::times'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::transTimes' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(393) : see declaration of 'qpOASES::DenseMatrix::transTimes'
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(368) : see declaration of 'qpOASES::DenseMatrix::transTimes'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::addToDiag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(407) : see declaration of 'qpOASES::DenseMatrix::addToDiag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::print' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(412) : see declaration of 'qpOASES::DenseMatrix::print'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::free' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(499) : see declaration of 'qpOASES::SparseMatrix::free'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::diag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(507) : see declaration of 'qpOASES::SparseMatrix::diag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::isDiag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(513) : see declaration of 'qpOASES::SparseMatrix::isDiag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::getNorm' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(519) : see declaration of 'qpOASES::SparseMatrix::getNorm'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::getRowNorm' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(524) : see declaration of 'qpOASES::SparseMatrix::getRowNorm'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::getRow' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(527) : see declaration of 'qpOASES::SparseMatrix::getRow'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::getCol' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(535) : see declaration of 'qpOASES::SparseMatrix::getCol'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::times' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(563) : see declaration of 'qpOASES::SparseMatrix::times'
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(543) : see declaration of 'qpOASES::SparseMatrix::times'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::transTimes' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(576) : see declaration of 'qpOASES::SparseMatrix::transTimes'
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(553) : see declaration of 'qpOASES::SparseMatrix::transTimes'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::addToDiag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(590) : see declaration of 'qpOASES::SparseMatrix::addToDiag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::print' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(603) : see declaration of 'qpOASES::SparseMatrix::print'
+         SubjectTo.cpp
+         Utils.cpp
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp(294): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp(297): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp(309): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(230) : see declaration of 'fscanf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp(314): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp(357): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp(360): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp(367): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(230) : see declaration of 'fscanf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp(371): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp(403): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp(406): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp(413): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp(416): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp(469): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp(472): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp(479): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp(482): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp(631): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp(633): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp(644): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp(648): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp(652): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp(656): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp(660): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp(664): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp(677): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp(681): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp(685): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp(689): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp(693): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(346) : see declaration of '_snprintf'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp(708): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\build\libs\Debug\qpOASES.lib" /NOLOGO /MACHINE:X64  /machine:x64 qpOASES.dir\Debug\BLASReplacement.obj
+         qpOASES.dir\Debug\Bounds.obj
+         qpOASES.dir\Debug\Constraints.obj
+         qpOASES.dir\Debug\Flipper.obj
+         qpOASES.dir\Debug\Indexlist.obj
+         qpOASES.dir\Debug\LAPACKReplacement.obj
+         qpOASES.dir\Debug\Matrices.obj
+         qpOASES.dir\Debug\MessageHandling.obj
+         qpOASES.dir\Debug\OQPinterface.obj
+         qpOASES.dir\Debug\Options.obj
+         qpOASES.dir\Debug\QProblem.obj
+         qpOASES.dir\Debug\QProblemB.obj
+         qpOASES.dir\Debug\SQProblem.obj
+         qpOASES.dir\Debug\SolutionAnalysis.obj
+         qpOASES.dir\Debug\SubjectTo.obj
+         qpOASES.dir\Debug\Utils.obj
+         qpOASES.vcxproj -> D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\build\libs\Debug\qpOASES.lib
+     1>Done Building Project "D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\build\qpOASES.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.46

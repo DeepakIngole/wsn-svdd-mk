@@ -12,4 +12,4 @@ sphereDistance=-2*sum((ones(size(testData,1),1)*ocSVM.alpha').*K, 2);
 
 % Anomaly detection
 predictLabel=ones(size(testData,1),1);
-predictLabel(sphereDistance-ocSVM.squaredRadius>1e-6)=-1;
+predictLabel(sphereDistance-ocSVM.squaredRadius>1e-4)=-1;

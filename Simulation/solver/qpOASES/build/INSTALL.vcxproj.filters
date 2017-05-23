@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\build\CMakeFiles\047336f2553b18237f14fbee498a92f0\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B26A5B60-8EEC-3DD5-8696-91BF009C1EFA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

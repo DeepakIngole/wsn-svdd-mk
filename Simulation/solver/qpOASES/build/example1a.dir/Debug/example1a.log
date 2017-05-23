@@ -1,0 +1,64 @@
+﻿Build started 25/03/2017 10:46:16.
+     1>Project "D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\build\example1a.vcxproj" on node 3 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/PhD/CB/02 Distributed MPC/libs/solver/qpOASES/CMakeLists.txt
+         CMake does not need to re-run because D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\build\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include" /Zi /nologo /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D __NO_COPYRIGHT__ /D _DEBUG /D __DEBUG__ /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"example1a.dir\Debug\\" /Fd"example1a.dir\Debug\vc120.pdb" /Gd /TP /errorReport:prompt "D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\examples\example1a.cpp"
+         example1a.cpp
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::free' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(311) : see declaration of 'qpOASES::DenseMatrix::free'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::diag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(319) : see declaration of 'qpOASES::DenseMatrix::diag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::isDiag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(325) : see declaration of 'qpOASES::DenseMatrix::isDiag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::getNorm' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(330) : see declaration of 'qpOASES::DenseMatrix::getNorm'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::getRowNorm' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(335) : see declaration of 'qpOASES::DenseMatrix::getRowNorm'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::getRow' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(339) : see declaration of 'qpOASES::DenseMatrix::getRow'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::getCol' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(348) : see declaration of 'qpOASES::DenseMatrix::getCol'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::times' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(379) : see declaration of 'qpOASES::DenseMatrix::times'
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(357) : see declaration of 'qpOASES::DenseMatrix::times'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::transTimes' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(393) : see declaration of 'qpOASES::DenseMatrix::transTimes'
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(368) : see declaration of 'qpOASES::DenseMatrix::transTimes'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::addToDiag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(407) : see declaration of 'qpOASES::DenseMatrix::addToDiag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(459): warning C4250: 'qpOASES::SymDenseMat' : inherits 'qpOASES::DenseMatrix::qpOASES::DenseMatrix::print' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(412) : see declaration of 'qpOASES::DenseMatrix::print'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::free' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(499) : see declaration of 'qpOASES::SparseMatrix::free'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::diag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(507) : see declaration of 'qpOASES::SparseMatrix::diag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::isDiag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(513) : see declaration of 'qpOASES::SparseMatrix::isDiag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::getNorm' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(519) : see declaration of 'qpOASES::SparseMatrix::getNorm'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::getRowNorm' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(524) : see declaration of 'qpOASES::SparseMatrix::getRowNorm'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::getRow' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(527) : see declaration of 'qpOASES::SparseMatrix::getRow'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::getCol' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(535) : see declaration of 'qpOASES::SparseMatrix::getCol'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::times' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(563) : see declaration of 'qpOASES::SparseMatrix::times'
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(543) : see declaration of 'qpOASES::SparseMatrix::times'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::transTimes' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(576) : see declaration of 'qpOASES::SparseMatrix::transTimes'
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(553) : see declaration of 'qpOASES::SparseMatrix::transTimes'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::addToDiag' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(590) : see declaration of 'qpOASES::SparseMatrix::addToDiag'
+     1>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(818): warning C4250: 'qpOASES::SymSparseMat' : inherits 'qpOASES::SparseMatrix::qpOASES::SparseMatrix::print' via dominance
+                 D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include\qpOASES/Matrices.hpp(603) : see declaration of 'qpOASES::SparseMatrix::print'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\build\bin\Debug\example1a.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib libs\Debug\qpOASES.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/PhD/CB/02 Distributed MPC/libs/solver/qpOASES/build/bin/Debug/example1a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/PhD/CB/02 Distributed MPC/libs/solver/qpOASES/build/bin/Debug/example1a.lib" /MACHINE:X64  /machine:x64 example1a.dir\Debug\example1a.obj
+         example1a.vcxproj -> D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\build\bin\Debug\example1a.exe
+     1>Done Building Project "D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\build\example1a.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.17

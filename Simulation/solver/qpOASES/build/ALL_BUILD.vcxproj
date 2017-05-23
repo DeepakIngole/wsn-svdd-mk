@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{6559C55E-F779-36DD-848E-4E3AF6A10FEC}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/PhD/CB/02 Distributed MPC/libs/solver/qpOASES/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-HD:/PhD/CB/02 Distributed MPC/libs/solver/qpOASES" "-BD:/PhD/CB/02 Distributed MPC/libs/solver/qpOASES/build" --check-stamp-file "D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\build\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/PhD/CB/02 Distributed MPC/libs/solver/qpOASES/CMakeLists.txt;D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\CMakeLists.txt;D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\build\CMakeFiles\3.7.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\build\CMakeFiles\3.7.2\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\build\CMakeFiles\3.7.2\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/PhD/CB/02 Distributed MPC/libs/solver/qpOASES/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-HD:/PhD/CB/02 Distributed MPC/libs/solver/qpOASES" "-BD:/PhD/CB/02 Distributed MPC/libs/solver/qpOASES/build" --check-stamp-file "D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\build\CMakeFiles\generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/PhD/CB/02 Distributed MPC/libs/solver/qpOASES/CMakeLists.txt;D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\CMakeLists.txt;D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\build\CMakeFiles\3.7.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\build\CMakeFiles\3.7.2\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\build\CMakeFiles\3.7.2\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/PhD/CB/02 Distributed MPC/libs/solver/qpOASES/build/ZERO_CHECK.vcxproj">
+      <Project>10BC2897-DC81-3405-BFC4-10DEC8B23701</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/PhD/CB/02 Distributed MPC/libs/solver/qpOASES/build/example1.vcxproj">
+      <Project>EA6267BE-F464-3A42-A4A2-D9046D76504F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/PhD/CB/02 Distributed MPC/libs/solver/qpOASES/build/example1a.vcxproj">
+      <Project>C0686A46-1E53-3C20-BC10-F431A70AC889</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/PhD/CB/02 Distributed MPC/libs/solver/qpOASES/build/example1b.vcxproj">
+      <Project>81C4AFFB-A53E-36F5-86EE-4F393C59272F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/PhD/CB/02 Distributed MPC/libs/solver/qpOASES/build/example2.vcxproj">
+      <Project>D37225BD-3EE2-391F-967E-A3A2F1137AE2</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/PhD/CB/02 Distributed MPC/libs/solver/qpOASES/build/example3.vcxproj">
+      <Project>287772BC-6DDA-3936-A411-63DC151EA95B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/PhD/CB/02 Distributed MPC/libs/solver/qpOASES/build/example3b.vcxproj">
+      <Project>9E72F367-32B8-3534-8FAF-15BBC5837BA1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/PhD/CB/02 Distributed MPC/libs/solver/qpOASES/build/example4.vcxproj">
+      <Project>5EE98258-47AE-357F-A763-B64862305FA2</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/PhD/CB/02 Distributed MPC/libs/solver/qpOASES/build/example5.vcxproj">
+      <Project>3B24BAE2-41E3-3107-8EC6-107819240824</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/PhD/CB/02 Distributed MPC/libs/solver/qpOASES/build/exampleLP.vcxproj">
+      <Project>FF2BFAD4-D672-30D0-9B3B-77630F3B0010</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/PhD/CB/02 Distributed MPC/libs/solver/qpOASES/build/qpOASES.vcxproj">
+      <Project>48ED5A61-0D1A-3B87-A3CD-2779C5423AC9</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/PhD/CB/02 Distributed MPC/libs/solver/qpOASES/build/qrecipe.vcxproj">
+      <Project>721C4ED6-B403-3CD8-B463-13237E9EF2CF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/PhD/CB/02 Distributed MPC/libs/solver/qpOASES/build/qrecipeSchur.vcxproj">
+      <Project>CAF5939E-DB52-37F5-85B0-811C6CD9B8DF</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,5 +1,6 @@
 addpath('misc');
 addpath('svdd');
+addpath(genpath('solver'));
 
 % %% Data Extraction
 % clear all;close all;clc;
@@ -84,9 +85,8 @@ end
 
 I{1}=[1 2411 2417 2501 2504 2509 2520 2521 2534];
 I{2}=[1 276 4602 4611 4613 4628 4630];
-I{35}=unique(max(1150,min(2100,find(moteData{35}(:,1)>20.6))));
-I{35}(1)=[];I{35}(end)=[];
-I{37}=unique(max(2.046e4,min(2.36e4,find(moteData{37}(:,1)>26))));
+I{35}=[];
+I{37}=unique(max(2.046e4,min(2.36e4,find(moteData{37}(:,1)>37))));
 I{37}(1)=[];I{37}(end)=[];
 
 abnormalData=[];
@@ -106,7 +106,7 @@ plot(abnormalData(:,1),abnormalData(:,2),'k*');
 
 %% SVDD Optimisation
 clear all;close all;clc;
-load train_data normalData;
+load train_data;
 
 % Normalization
 normalizedData=bsxfun(@rdivide,...
@@ -133,6 +133,7 @@ predictLabel=svdd_classify(ocSVM,testData);
 
 figure(1);
 plot(normalData(:,1),normalData(:,2),'r*');hold on;
+plot(abnormalData(:,1),abnormalData(:,2),'b*');hold on;
 plot(testData(predictLabel==1,1),testData(predictLabel==1,2),'go','linewidth',2);hold on;
 plot(testData(predictLabel==-1,1),testData(predictLabel==-1,2),'ko','linewidth',2);
 
@@ -150,6 +151,7 @@ ibrlData=[month date time moteid temperature humidity];
 ibrlData(:,[1 2 3])=[]; 
 
 % Detect anomalies
+clear predictLabel;
 for i=[1 2 33 35 37]
     moteData{i}=ibrlData(ibrlData(:,1)==i,[2 3]);
     predictLabel{i}=svdd_classify(ocSVM,moteData{i});
@@ -158,19 +160,113 @@ for i=[1 2 33 35 37]
     plot(find((predictLabel{i}==-1)),moteData{i}(predictLabel{i}==-1,:),'ro','linewidth',2);
 end
 
-%% G-mean Accuracy
+%% Parameters Optimisation using Grid Search
 clear all;close all;clc;
-load ocsvm_result;
 load train_data;
 
-% Normal data classification
-normalLabel=svdd_classify(ocSVM,normalData);
-Acc_positive=length(find(normalLabel==1))/length(normalLabel)*100;
+normalizedData=bsxfun(@rdivide,...
+    normalData-repmat(.5*(max(normalData)+min(normalData)),size(normalData,1),1),...
+    max(normalData)-min(normalData));
+trainData=consolidator(normalizedData,[],@mean,3e-2);
+trainLabel=ones(size(trainData,1),1);
 
-% Abnormal data classification
-abnormalLabel=svdd_classify(ocSVM,abnormalData);
-Acc_negative=length(find(abnormalLabel==-1))/length(abnormalLabel)*100;
+ocSVM.normalizeLB=min(normalData);
+ocSVM.normalizeUB=max(normalData);
 
-% G-mean accuracy
-g=sqrt(Acc_positive*Acc_negative);
+C_grid=[5e-3 1e-2 2e-2 5e-2 1e-1 2e-1 5e-1 1];
+sigma_grid=[1/128 1/64 1/32 1/16 1/8 1/4 1/2 1 2 4 8];
+[Cgrid,sigmagrid]=meshgrid(C_grid,sigma_grid);
+
+for i=1:size(Cgrid,1)
+    
+    for j=1:size(Cgrid,2)
+
+        % Training
+        ocSVM.C=[Cgrid(i,j) 0];
+        ocSVM.sigma=sigmagrid(i,j);
+        ocSVM=svdd_optimize(ocSVM,trainData,trainLabel);
+
+        % Evaluation
+        normalLabel=svdd_classify(ocSVM,normalData);
+        Acc_positive=length(find(normalLabel==1))/length(normalLabel)*100;
+        abnormalLabel=svdd_classify(ocSVM,abnormalData);
+        Acc_negative=length(find(abnormalLabel==-1))/length(abnormalLabel)*100;
+        ggrid(i,j)=sqrt(Acc_positive*Acc_negative);
+    
+    end
+end
+
+% G-mean surface
+figure(1);
+surf(Cgrid,sigmagrid,ggrid);
+xlabel('$C$','interpreter','latex');
+ylabel('$\sigma$','interpreter','latex');
+zlabel('$g$','interpreter','latex');
+
+% Optimal hyperparameters
+[~,ind]=max(ggrid(:));
+[m,n]=ind2sub(size(ggrid),ind);
+ocSVM.C=[Cgrid(m,n) 0];
+ocSVM.sigma=sigmagrid(m,n);
+ocSVM=svdd_optimize(ocSVM,trainData,trainLabel);
+save ocsvm_result ocSVM;
+
+% Validation
+testData=repmat(ocSVM.normalizeLB,3e4,1)+...
+    rand(3e4,2).*(ocSVM.normalizeUB-ocSVM.normalizeLB);
+predictLabel=svdd_classify(ocSVM,testData);
+
+figure(2);
+plot(normalData(:,1),normalData(:,2),'r*');hold on;
+plot(abnormalData(:,1),abnormalData(:,2),'b*');hold on;
+plot(testData(predictLabel==1,1),testData(predictLabel==1,2),'go','linewidth',2);hold on;
+plot(testData(predictLabel==-1,1),testData(predictLabel==-1,2),'ko','linewidth',2);
+
+%% Parameters Optimisation using Global Optimisation
+clear all;close all;clc;
+load train_data;
+
+normalizedData=bsxfun(@rdivide,...
+    normalData-repmat(.5*(max(normalData)+min(normalData)),size(normalData,1),1),...
+    max(normalData)-min(normalData));
+trainData=consolidator(normalizedData,[],@mean,3e-2);
+trainLabel=ones(size(trainData,1),1);
+
+ocSVM.normalizeLB=min(normalData);
+ocSVM.normalizeUB=max(normalData);
+
+% Derivative-free optimization
+algorithmList={NLOPT_GN_DIRECT NLOPT_GN_DIRECT_L NLOPT_GN_DIRECT_L_RAND...
+               NLOPT_GN_CRS2_LM...
+               NLOPT_GN_ESCH...
+               NLOPT_GN_ISRES};
+opt.algorithm=algorithmList{4};
+opt.xtol_abs=[1e-3;1e-3];
+opt.ftol_abs=1e-4;
+opt.maxeval=1e2;
+opt.max_objective=...
+    @(x) gmean_eval(ocSVM,trainData,trainLabel,normalData,abnormalData,x);
+opt.lower_bounds=[5e-3;1/128];
+opt.upper_bounds=[1;8];
+opt.verbose=1;
+opt.initial_step=[1e-1;1e-2];
+[ropt,Jopt,nJ]=nlopt_optimize_mex(opt,[1 .5]);
+
+% Optimal hyperparameters
+ocSVM.C=[ropt(1) 0];
+ocSVM.sigma=ropt(2);
+ocSVM=svdd_optimize(ocSVM,trainData,trainLabel);
+
+% Validation
+testData=repmat(ocSVM.normalizeLB,1e4,1)+...
+    rand(1e4,2).*(ocSVM.normalizeUB-ocSVM.normalizeLB);
+predictLabel=svdd_classify(ocSVM,testData);
+
+figure(2);
+plot(normalData(:,1),normalData(:,2),'r*');hold on;
+plot(abnormalData(:,1),abnormalData(:,2),'b*');hold on;
+plot(testData(predictLabel==1,1),testData(predictLabel==1,2),'go','linewidth',2);hold on;
+plot(testData(predictLabel==-1,1),testData(predictLabel==-1,2),'ko','linewidth',2);
+xlim([ocSVM.normalizeLB(1) ocSVM.normalizeUB(1)]);
+ylim([ocSVM.normalizeLB(2) ocSVM.normalizeUB(2)]);
 

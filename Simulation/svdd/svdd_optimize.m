@@ -22,6 +22,10 @@ while 1
 end
 D=.5*(D+D');
 
+% Equality constraint
+A=trainLabel';
+b=1;
+
 % Lower and upper bounds
 lb=zeros(size(trainData,1),1);
 ub=lb;
@@ -30,11 +34,9 @@ ub(trainLabel==-1)=ocSVM.C(2);
 
 % Solve dual optimisation
 try % use CPLEX if installed
-    alpha=cplexqp(2*D,-f,[],[],[],[],lb,ub); 
+    alpha=cplexqp(2*D,-f,[],[],A,b,lb,ub); 
 catch % otherwise use quadprog (not recommended)
-    options=optimoptions('quadprog',...
-        'Algorithm','trust-region-reflective','Display','off');
-    alpha=quadprog(2*D,-f,[],[],[],[],lb,ub,[],options); 
+    alpha=quadprog(2*D,-f,[],[],A,b,lb,ub); 
 end
 alpha=trainLabel.*alpha;
 

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\BLASReplacement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Bounds.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Constraints.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Flipper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Indexlist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\LAPACKReplacement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Matrices.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\MessageHandling.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\OQPinterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Options.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\QProblemB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\SQProblem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\SolutionAnalysis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\SubjectTo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\src\Utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\PhD\CB\02 Distributed MPC\libs\solver\qpOASES\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{07BABFCB-7155-3DE1-9B4E-3A3924231A41}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
