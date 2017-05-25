@@ -240,26 +240,27 @@ algorithmList={NLOPT_GN_DIRECT NLOPT_GN_DIRECT_L NLOPT_GN_DIRECT_L_RAND...
                NLOPT_GN_CRS2_LM...
                NLOPT_GN_ESCH...
                NLOPT_GN_ISRES};
-opt.algorithm=algorithmList{4};
+opt.algorithm=algorithmList{2};
 opt.xtol_abs=[1e-3;1e-3];
 opt.ftol_abs=1e-4;
 opt.maxeval=1e2;
 opt.max_objective=...
-    @(x) gmean_eval(ocSVM,trainData,trainLabel,normalData,abnormalData,x);
+    @(x) svdd_gmean(ocSVM,trainData,trainLabel,normalData,abnormalData,x);
 opt.lower_bounds=[5e-3;1/128];
 opt.upper_bounds=[1;8];
 opt.verbose=1;
-opt.initial_step=[1e-1;1e-2];
+opt.initial_step=[1e-2;1e-2];
 [ropt,Jopt,nJ]=nlopt_optimize_mex(opt,[1 .5]);
 
 % Optimal hyperparameters
 ocSVM.C=[ropt(1) 0];
 ocSVM.sigma=ropt(2);
 ocSVM=svdd_optimize(ocSVM,trainData,trainLabel);
+save ocsvm_result ocSVM;
 
 % Validation
-testData=repmat(ocSVM.normalizeLB,1e4,1)+...
-    rand(1e4,2).*(ocSVM.normalizeUB-ocSVM.normalizeLB);
+testData=repmat(ocSVM.normalizeLB,3e4,1)+...
+    rand(3e4,2).*(ocSVM.normalizeUB-ocSVM.normalizeLB);
 predictLabel=svdd_classify(ocSVM,testData);
 
 figure(2);

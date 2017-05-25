@@ -33,16 +33,6 @@ B.~Sch{\"{o}}lkopf, R.~Williamson, A.~Smola, J.~Shawe-Taylor, and J.~Platt,
 \bibitem{Vapnik1998}
 V.~N. Vapnik, \emph{{Statistical Learning Theory}}, 1998, vol.~pp.
 
-\bibitem{scholkopf2001estimating}
-B.~Sch{\"o}lkopf, J.~C. Platt, J.~Shawe-Taylor, A.~J. Smola, and R.~C.
-  Williamson, ``Estimating the support of a high-dimensional distribution,''
-  \emph{Neural computation}, vol.~13, no.~7, pp. 1443--1471, 2001.
-
-\bibitem{Xiao2015}
-Y.~Xiao, H.~Wang, and W.~Xu, ``{Parameter selection of gaussian kernel for
-  one-class SVM},'' \emph{IEEE Transactions on Cybernetics}, vol.~45, no.~5,
-  pp. 927--939, 2015.
-
 \bibitem{Suthaharan2010}
 S.~Suthaharan, M.~Alzahrani, S.~Rajasegarar, C.~Leckie, and M.~Palaniswami,
   ``{Labelled data collection for anomaly detection in wireless sensor
@@ -53,5 +43,9 @@ S.~Suthaharan, M.~Alzahrani, S.~Rajasegarar, C.~Leckie, and M.~Palaniswami,
 P.~Buonadonna, D.~Gay, J.~M. Hellerstein, W.~Hong, and S.~Madden, ``{TASK:
   Sensor network in a box},'' \emph{Proceedings of the Second European Workshop
   on Wireless Sensor Networks, EWSN 2005}, vol. 2005, pp. 133--144, 2005.
+
+\bibitem{nlopt}
+S.~G. Johnson, ``The nlopt nonlinear-optimization package,''
+  \url{http://ab-initio.mit.edu/nlopt}.
 
 \end{thebibliography}
