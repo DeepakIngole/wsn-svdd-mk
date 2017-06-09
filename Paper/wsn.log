@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.12.1)  25 MAY 2017 22:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.12.1)  9 JUN 2017 23:15
 entering extended mode
 **./wsn.tex
 (wsn.tex
@@ -899,11 +899,11 @@ Missing character: There is no € in font ptmr7t!
 
 
 ]
-<Pictures/ibrl_wsn.png, id=20, 903.375pt x 468.75125pt>
+<Pictures/ibrl_wsn.png, id=19, 903.375pt x 468.75125pt>
 File: Pictures/ibrl_wsn.png Graphic file (type png)
 
 <use Pictures/ibrl_wsn.png>
-Package pdftex.def Info: Pictures/ibrl_wsn.png used on input line 170.
+Package pdftex.def Info: Pictures/ibrl_wsn.png used on input line 157.
 (pdftex.def)             Requested size: 225.8432pt x 117.18752pt.
  (wsn.bbl
 Underfull \hbox (badness 2990) in paragraph at lines 37--41
@@ -914,7 +914,7 @@ Underfull \hbox (badness 2990) in paragraph at lines 37--41
 Here is how much of TeX's memory you used:
  25120 strings out of 493335
  626434 string characters out of 3139236
- 779119 words of memory out of 10000000
+ 777119 words of memory out of 10000000
  28210 multiletter control sequences out of 15000+200000
  43095 words of font info for 100 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -931,7 +931,7 @@ s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2
 /type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ur
 w/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pf
 b><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on wsn.pdf (2 pages, 217618 bytes).
+Output written on wsn.pdf (2 pages, 214635 bytes).
 PDF statistics:
  62 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

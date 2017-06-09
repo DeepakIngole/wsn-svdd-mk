@@ -33,14 +33,14 @@
 
 \begin{document}
 
-\title{On Anomaly Detection in Wireless Sensor Networks using\\Support Vector Data Description with Parameters Optimisation}
+\title{Anomaly Detection in Wireless Sensor Networks via Support Vector Data Description with Bayesian Optimization of Hyperparameters}
 
 \author{
 Van Vuong~Trinh$^1$,
 Kim Phuc~Tran$^1$ and 
 Anh Tuan~Mai$^2$\\
-$^1$Dong A University
-$^2$Hanoi University of Science and Technology\\
+$^1$Division of Artificial Intelligence, Dong A University, Danang, Vietnam\\
+$^2$International Training Institute for Materials Science (ITIMS),\\Hanoi University of Science and Technology, Hanoi, Vietnam\\
 email: vanvuong.trinh@gmail.com
 }
 
@@ -54,7 +54,7 @@ email: vanvuong.trinh@gmail.com
 
 In this section, we briefly recall the support vector data sescription (SVDD) originally derived in \cite{Tax2004} which is an alternative of the known one-class support vector machines (OCSVM) \cite{Scholkopf2000} and analogous to support vector machines (SVM) \cite{Vapnik1998}.
 
-\subsection{SVDD Formulation and Training}
+\subsection{Theory}
 
 We have a training data set $\{ \mathbf{x}_i \}$, $i=1,\dots,l$ for which we want to obtain a hypersphere with minimum volume, containing all (or most of) the data points. This is very sensitive to the most outliers in the training set. When one or a few very remote data points are in the training set, a very large hypersphere is obtained which will not represent the data approximately accurate. Therefore, we allow for some data points outside the hypersphere by introducing slack variables $\xi_i \ge 0$. Let $a$ and $R$ being reserved for the center and the radius of the hypersphere, the following primal optimization problem is considered:
 \begin{subequations}\label{eq:svdd_primal_sphere}
@@ -99,7 +99,7 @@ Such an optimisation is feasible if and only if the regularization parameter sat
 
 The data points corresponding to $\alpha^\star_k > 0$ are consequently referred to as the \emph{support vectors}. These support vectors characterize the scope of the description.
 
-\subsection{SVDD Discriminant Function}
+\subsection{Discriminant Function}
 
 The image of the sphere center is
 \begin{align}
@@ -124,38 +124,25 @@ where
 v = 2 \sum_{i=1}^l \sum_{j=1}^l \alpha^\star_i \alpha^\star_j K \left( x_i, x_j \right) + 1 - R^2
 \end{align}
 
-\subsection{SVDD Evaluation Measures}
+\subsection{Evaluation Measures via Geometric Mean Analysis}
 
 While training a SVDD does not require the availability of abnormal data, its evaluation does. 
-
-\subsubsection{Area under Receiver Operating Characteristic}
-
-
-
-\subsubsection{G-Mean Accuracy}
 
 \begin{align}
 g = \sqrt{Acc^+ \cdot Acc^-}
 \end{align}
 
-\section{Anomaly Detection Method for Wireless Sensor Networks}
+\section{Anomaly Detection Method for Wireless Sensor Networks using LOF and SVDD}
+
+\subsection{Description of Aproach}
+
+\subsection{Local Outlier Factor}
+
+
+
+\subsection{Bayesian Optimization for Hyperparameter Selection}
 
 Similar to other kernel methods, the performance of SVDD models is strongly affected by the kernel parameters.
-
-\begin{subequations}
-\begin{align}
-\underset{
-	\begin{array}{c}
-		 C, \sigma
-	\end{array}}{\text{Minimize }} & J\left( C, \sigma \right)\\
-\text{Subject to } & \dfrac{1}{N} \le C \le \min \left( 1, \dfrac{1}{\nu N} \right) \\
-& 0 \le \sigma
-\end{align}
-\end{subequations}
-where:
-\begin{itemize}
-\item $\nu$ fraction outlier
-\end{itemize}
 
 \section{Simulation Results}
 

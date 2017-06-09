@@ -137,6 +137,17 @@ plot(abnormalData(:,1),abnormalData(:,2),'b*');hold on;
 plot(testData(predictLabel==1,1),testData(predictLabel==1,2),'go','linewidth',2);hold on;
 plot(testData(predictLabel==-1,1),testData(predictLabel==-1,2),'ko','linewidth',2);
 
+% ROC
+normalData=consolidator(normalData,[],@mean,1e-1);
+abnormalData=consolidator(abnormalData,[],@mean,1e-1);
+testData=[normalData;abnormalData];
+trueLabel=[ones(size(normalData,1),1);-1*ones(size(abnormalData,1),1)];
+predictLabel=svdd_classify(ocSVM,testData);
+[X,Y]=perfcurve(trueLabel,predictLabel,normalData);
+figure(2);
+plot(X,Y)
+xlabel('False positive rate'); ylabel('True positive rate')
+
 %% Time Series Validation
 clear all;close all;clc;
 load ocsvm_result;
@@ -259,8 +270,8 @@ ocSVM=svdd_optimize(ocSVM,trainData,trainLabel);
 save ocsvm_result ocSVM;
 
 % Validation
-testData=repmat(ocSVM.normalizeLB,3e4,1)+...
-    rand(3e4,2).*(ocSVM.normalizeUB-ocSVM.normalizeLB);
+testData=repmat(ocSVM.normalizeLB,1e4,1)+...
+    rand(1e4,2).*(ocSVM.normalizeUB-ocSVM.normalizeLB);
 predictLabel=svdd_classify(ocSVM,testData);
 
 figure(2);
