@@ -1,35 +1,61 @@
 \relax 
+\emailauthor{vanvuong.trinh@gmail.com}{Van Vuong~Trinh\corref {cor1}}
+\Newlabel{cor1}{1}
+\citation{Xie2011}
+\citation{feng2017new}
+\citation{Rajasegarar2014}
 \citation{Tax2004}
-\citation{Scholkopf2000}
+\citation{scholkopf2001estimating}
 \citation{Vapnik1998}
-\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}}
-\@writefile{toc}{\contentsline {section}{\numberline {II}Support Vector Data Description and Preliminaries}{1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-A}}Theory}{1}}
-\newlabel{eq:svdd_primal_sphere}{{1}{1}}
-\newlabel{eq:svdd_primal}{{2}{1}}
-\newlabel{eq:svdd_dual}{{4}{1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-B}}Discriminant Function}{1}}
-\citation{Suthaharan2010}
-\citation{Buonadonna2005}
+\Newlabel{danang}{a}
+\Newlabel{hanoi}{b}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Description of Anomaly Detection Approach}{1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Theory of SVDD}{1}}
+\citation{chang2013revisit}
+\citation{Scholkopf2001}
+\newlabel{eq:svm_primal}{{3}{2}}
+\newlabel{eq:svm_lagrange_init}{{4}{2}}
+\newlabel{eq:svm_lagrange_dLdR}{{5}{2}}
+\newlabel{eq:svm_lagrange_dLda}{{6}{2}}
+\newlabel{eq:svm_lagrange_dLdxi}{{7}{2}}
+\newlabel{eq:svm_dual}{{9}{2}}
+\newlabel{eq:sv_alpha}{{10b}{2}}
+\citation{shawe2004kernel}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Generalization with kernels}{3}}
+\newlabel{eq:svm_dual_kernel}{{14}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Discrimination with control limit adjustment}{3}}
+\newlabel{eq:decision_fcn}{{17}{3}}
+\citation{shawe2004kernel}
+\citation{gablonsky2001locally}
 \citation{nlopt}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Hyperparameter optimization}{4}}
+\newlabel{eq:param_opt}{{20}{4}}
+\newlabel{eq:gmean}{{21}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Proposed algorithm for anomaly detection}{4}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces (Anomaly detection algorithm) Given $\lambda > 0$ and $\delta > 0$, this algorithm optimizes SVDD's hyperparameters $(C,\sigma )$. Let $s$ being reserved for the iteration counter of an optimization solver $\mathcal  {S}$. It requires training samples $\{ x_k^{train} \}_{k=1}^{N_{train}}$ and testing samples $\{ x_k^{test}, y_k^{test} \}_{k=1}^{N_{test}}$.\relax }}{4}}
+\citation{Buonadonna2005}
 \bibstyle{IEEEtran}
 \bibdata{wsnbib,svmbib,ocsvmbib,ibrlbib,miscbib}
-\bibcite{Tax2004}{{1}{}{{}}{{}}}
-\bibcite{Scholkopf2000}{{2}{}{{}}{{}}}
-\bibcite{Vapnik1998}{{3}{}{{}}{{}}}
-\bibcite{Suthaharan2010}{{4}{}{{}}{{}}}
-\bibcite{Buonadonna2005}{{5}{}{{}}{{}}}
-\bibcite{nlopt}{{6}{}{{}}{{}}}
+\bibcite{Xie2011}{{1}{}{{}}{{}}}
+\bibcite{feng2017new}{{2}{}{{}}{{}}}
+\bibcite{Rajasegarar2014}{{3}{}{{}}{{}}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Simulation Results}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Data description}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Results}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Time-domain validation using the anomaly detector with $\delta =0.02$.\relax }}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Accuracy analysis}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Discrimination with different values of $\delta $.\relax }}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Robustness analysis}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Comparison between MHK and RBFK}{5}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusion and Future Work}{5}}
+\bibcite{Tax2004}{{4}{}{{}}{{}}}
+\bibcite{scholkopf2001estimating}{{5}{}{{}}{{}}}
+\bibcite{Vapnik1998}{{6}{}{{}}{{}}}
+\bibcite{chang2013revisit}{{7}{}{{}}{{}}}
+\bibcite{Scholkopf2001}{{8}{}{{}}{{}}}
+\bibcite{shawe2004kernel}{{9}{}{{}}{{}}}
+\bibcite{gablonsky2001locally}{{10}{}{{}}{{}}}
+\bibcite{nlopt}{{11}{}{{}}{{}}}
+\bibcite{Buonadonna2005}{{12}{}{{}}{{}}}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-C}}Evaluation Measures via Geometric Mean Analysis}{2}}
-\@writefile{toc}{\contentsline {section}{\numberline {III}Anomaly Detection Method for Wireless Sensor Networks using LOF and SVDD}{2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-A}}Description of Aproach}{2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-B}}Local Outlier Factor}{2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-C}}Bayesian Optimization for Hyperparameter Selection}{2}}
-\@writefile{toc}{\contentsline {section}{\numberline {IV}Simulation Results}{2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}}Intel Berkeley Research Laboratory Data}{2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces A map of IBRL, with mote locations labeled in black.\relax }}{2}}
-\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:ibrl_wsn}{{1}{2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}}Numerical Analysis of Parameters Optimization Algorithm}{2}}
-\@writefile{toc}{\contentsline {section}{\numberline {V}Conclusion and Future Work}{2}}
