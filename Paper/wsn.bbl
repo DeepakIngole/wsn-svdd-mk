@@ -29,11 +29,48 @@ M.~Xie, S.~Han, B.~Tian, and S.~Parvin, ``{Anomaly detection in wireless sensor
   \url{http://dx.doi.org/10.1016/j.jnca.2011.03.004}
 \BIBentrySTDinterwordspacing
 
-\bibitem{feng2017new}
-Z.~Feng, J.~Fu, D.~Du, F.~Li, and S.~Sun, ``A new approach of anomaly detection
-  in wireless sensor networks using support vector data description,''
-  \emph{International Journal of Distributed Sensor Networks}, vol.~13, no.~1,
-  p. 1550147716686161, 2017.
+\bibitem{sharma2010sensor}
+A.~Sharma, L.~Golubchik, and R.~Govindan, ``Sensor faults: Detection methods
+  and prevalence in real-world datasets,'' \emph{ACM Transactions on Sensor
+  Networks (TOSN)}, vol.~6, no.~3, p.~23, 2010.
+
+\bibitem{ilonen2006gaussian}
+J.~Ilonen, P.~Paalanen, J.~Kamarainen, and H.~Kalviainen, ``Gaussian mixture
+  pdf in one-class classification: computing and utilizing confidence values,''
+  in \emph{Pattern Recognition, 2006. ICPR 2006. 18th International Conference
+  on}, vol.~2.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2006, pp. 577--580.
+
+\bibitem{clifton2011novelty}
+D.~A. Clifton, S.~Hugueny, and L.~Tarassenko, ``Novelty detection with
+  multivariate extreme value statistics,'' \emph{Journal of signal processing
+  systems}, vol.~65, no.~3, pp. 371--389, 2011.
+
+\bibitem{Tran2015a}
+K.~Tran, P.~Castagliola, and G.~Celano, ``Monitoring the {R}atio of {T}wo
+  {N}ormal {V}ariables {U}sing {R}un {R}ules {T}ype {C}ontrol {C}harts,''
+  \emph{International Journal of Production Research}, vol.~54, no.~6, pp.
+  1670--1688, 2016.
+
+\bibitem{Tran2015b}
+K.~Tran, P.~Castagliola, and G.~Celano, ``Monitoring the {R}atio of {T}wo {N}ormal {V}ariables {U}sing {EWMA}
+  {T}ype {C}ontrol {C}harts,'' \emph{Quality and Reliability Engineering
+  International}, 2015, in press, DOI: 10.1002/qre.1918.
+
+\bibitem{Chandola2016}
+V.~Chandola, A.~Banerjee, and V.~Kumar, \emph{Anomaly Detection}.\hskip 1em
+  plus 0.5em minus 0.4em\relax Boston, MA: Springer US, 2016, pp. 1--15.
+
+\bibitem{Tran2016}
+K.~Tran, P.~Castagliola, and G.~Celano, ``Monitoring the {R}atio of
+  {P}opulation {M}eans of a {B}ivariate {N}ormal distribution using {CUSUM}
+  {T}ype {C}ontrol {C}harts,'' \emph{Statistical Papers}, 2016, in press, DOI:
+  10.1007/s00362-016-0769-4.
+
+\bibitem{Tran2016c}
+K.~Tran, ``The efficiency of the 4-out-of-5 {R}uns {R}ules scheme for
+  monitoring the {R}atio of {P}opulation {M}eans of a {B}ivariate {N}ormal
+  distribution,'' \emph{International Journal of Reliability, Quality and
+  Safety Engineering}, 2016, in press, DOI: 10.1142/S0218539316500200.
 
 \bibitem{Rajasegarar2014}
 \BIBentryALTinterwordspacing
@@ -42,6 +79,22 @@ S.~Rajasegarar, C.~Leckie, and M.~Palaniswami, ``{Hyperspherical cluster based
   of Parallel and Distributed Computing}, vol.~74, no.~1, pp. 1833--1847, 2014.
   [Online]. Available: \url{http://dx.doi.org/10.1016/j.jpdc.2013.09.005}
 \BIBentrySTDinterwordspacing
+
+\bibitem{feng2017new}
+Z.~Feng, J.~Fu, D.~Du, F.~Li, and S.~Sun, ``A new approach of anomaly detection
+  in wireless sensor networks using support vector data description,''
+  \emph{International Journal of Distributed Sensor Networks}, vol.~13, no.~1,
+  p. 1550147716686161, 2017.
+
+\bibitem{abe2005training}
+S.~Abe, ``Training of support vector machines with mahalanobis kernels,''
+  \emph{Artificial Neural Networks: Formal Models and Their Applications--ICANN
+  2005}, pp. 750--750, 2005.
+
+\bibitem{maboudou2016monitoring}
+E.~Maboudou-Tchao, I.~Silva, and N.~Diawara, ``Monitoring the mean vector with
+  mahalanobis kernels,'' \emph{Quality Technology \& Quantitative Management},
+  pp. 1--16, 2016.
 
 \bibitem{Tax2004}
 D.~M.~J. Tax and R.~P.~W. Duin, ``{Support Vector Data Description},''
@@ -69,14 +122,19 @@ J.~Shawe-Taylor and N.~Cristianini, \emph{Kernel methods for pattern
   analysis}.\hskip 1em plus 0.5em minus 0.4em\relax Cambridge university press,
   2004.
 
-\bibitem{gablonsky2001locally}
-J.~M. Gablonsky and C.~T. Kelley, ``A locally-biased form of the direct
-  algorithm,'' \emph{Journal of Global Optimization}, vol.~21, no.~1, pp.
-  27--37, 2001.
+\bibitem{breunig2000lof}
+M.~M. Breunig, H.-P. Kriegel, R.~T. Ng, and J.~Sander, ``Lof: identifying
+  density-based local outliers,'' in \emph{ACM sigmod record}, vol.~29,
+  no.~2.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2000, pp. 93--104.
 
-\bibitem{nlopt}
-S.~G. Johnson, ``The nlopt nonlinear-optimization package,''
-  \url{http://ab-initio.mit.edu/nlopt}.
+\bibitem{theissler2013autonomously}
+A.~Theissler and I.~Dear, ``Autonomously determining the parameters for svdd
+  with rbf kernel from a one-class training set.''
+
+\bibitem{mockus2012bayesian}
+J.~Mockus, \emph{Bayesian approach to global optimization: theory and
+  applications}.\hskip 1em plus 0.5em minus 0.4em\relax Springer Science \&
+  Business Media, 2012, vol.~37.
 
 \bibitem{Buonadonna2005}
 P.~Buonadonna, D.~Gay, J.~M. Hellerstein, W.~Hong, and S.~Madden, ``{TASK:

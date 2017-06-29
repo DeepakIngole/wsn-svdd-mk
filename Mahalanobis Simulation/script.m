@@ -95,7 +95,7 @@ trainLabel=ones(size(trainData,1),1);
 
 ocSVM.normalizeLB=min(positiveData);
 ocSVM.normalizeUB=max(positiveData); 
-ocSVM.gamma=1e-2; % control limit adjustment
+ocSVM.gamma=2e-2; % control limit adjustment
 
 % Bayesian optimization
 algorithmList={NLOPT_GN_DIRECT NLOPT_GN_DIRECT_L NLOPT_GN_DIRECT_L_RAND...
@@ -150,14 +150,14 @@ I{2}=[1 276 4602 4611 4613 4628 4630 1.88e4:1.98e4];
 J{2}=[4.25e4:4.65e4];
 
 I{33}=[1.42e4:1.48e4];
-J{33}=[3.3e4:3.55e4];
+J{33}=[3.3e4:3.48e4];
 
 I{35}=[4.5e4:4.55e4];
-J{35}=[3.5e4:4.2e4];
+J{35}=[3.5e4:3.6e4];
 
 I{37}=unique(max(2.046e4,min(2.36e4,find(moteData{37}(:,1)>37))));
 I{37}(1)=[];I{37}(end)=[];
-J{37}=[4.7e4:4.79e4];
+J{37}=[4.7e4:4.74e4];
 
 negativeData=[];
 positiveData=[];
@@ -178,7 +178,7 @@ testData=[positiveData;negativeData];
 trueLabel=[ones(size(positiveData,1),1);-1*ones(size(negativeData,1),1)];
 [predictLabel,boundaryLabel]=svdd_classify(ocSVM,testData);
 
-figure(100);clf;
+figure;clf;
 plot(positiveData(:,1),positiveData(:,2),'b*');hold on;
 plot(negativeData(:,1),negativeData(:,2),'r*');hold on;
 plot(testData(predictLabel==1,1),testData(predictLabel==1,2),'go','linewidth',2);
@@ -187,8 +187,3 @@ plot(testData(predictLabel==-1,1),testData(predictLabel==-1,2),'ko','linewidth',
 DR=length(find(predictLabel==-1 & trueLabel==-1))/size(negativeData,1);
 FNR=1-DR;
 FPR=length(find(predictLabel==-1 & trueLabel==1))/size(positiveData,1);
-
-
-
-
-

@@ -139,7 +139,7 @@ year = {2004}
   timestamp = {2016.04.10},
 }
 
-@Article{Tran2015b,
+@Article{tran2015b,
   author    = {K.P. Tran and P. Castagliola and G. Celano},
   title     = {Monitoring the {R}atio of {T}wo {N}ormal {V}ariables {U}sing {EWMA} {T}ype {C}ontrol {C}harts},
   journal   = {Quality and Reliability Engineering International},
@@ -176,16 +176,6 @@ year = {2004}
   year      = {2005},
   pages     = {750--750},
   publisher = {Springer},
-}
-
-@InProceedings{ilonen2006gaussian,
-  author       = {J. Ilonen and P. Paalanen and J.K. Kamarainen and H. Kalviainen},
-  title        = {Gaussian mixture pdf in one-class classification: computing and utilizing confidence values},
-  booktitle    = {Pattern Recognition, 2006. ICPR 2006. 18th International Conference on},
-  year         = {2006},
-  volume       = {2},
-  pages        = {577--580},
-  organization = {IEEE},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

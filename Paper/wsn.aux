@@ -1,61 +1,90 @@
 \relax 
-\emailauthor{vanvuong.trinh@gmail.com}{Van Vuong~Trinh\corref {cor1}}
-\Newlabel{cor1}{1}
 \citation{Xie2011}
-\citation{feng2017new}
+\citation{sharma2010sensor}
+\citation{ilonen2006gaussian}
+\citation{clifton2011novelty}
+\citation{Tran2015a}
+\citation{Tran2015b}
+\citation{Chandola2016}
+\citation{Tran2016}
+\citation{Tran2016c}
+\citation{sharma2010sensor}
+\citation{Xie2011}
 \citation{Rajasegarar2014}
+\citation{Chandola2016}
+\citation{feng2017new}
+\citation{abe2005training}
+\citation{maboudou2016monitoring}
 \citation{Tax2004}
 \citation{scholkopf2001estimating}
 \citation{Vapnik1998}
-\Newlabel{danang}{a}
-\Newlabel{hanoi}{b}
-\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Description of Anomaly Detection Approach}{1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Theory of SVDD}{1}}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}}
+\@writefile{toc}{\contentsline {section}{\numberline {II}Support Vector Data Description and Preliminaries}{1}}
+\newlabel{sec:SVDD}{{II}{1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-A}}Theory of SVDD}{1}}
 \citation{chang2013revisit}
 \citation{Scholkopf2001}
+\citation{shawe2004kernel}
 \newlabel{eq:svm_primal}{{3}{2}}
 \newlabel{eq:svm_lagrange_init}{{4}{2}}
-\newlabel{eq:svm_lagrange_dLdR}{{5}{2}}
-\newlabel{eq:svm_lagrange_dLda}{{6}{2}}
-\newlabel{eq:svm_lagrange_dLdxi}{{7}{2}}
-\newlabel{eq:svm_dual}{{9}{2}}
-\newlabel{eq:sv_alpha}{{10b}{2}}
+\newlabel{eq:svm_lagrange_dLdR}{{5a}{2}}
+\newlabel{eq:svm_lagrange_dLda}{{5b}{2}}
+\newlabel{eq:svm_lagrange_dLdxi}{{5c}{2}}
+\newlabel{eq:svm_dual}{{7}{2}}
+\newlabel{eq:sv_alpha}{{8b}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-B}}Kernelization with Mahalanobis distance}{2}}
+\newlabel{eq:svm_dual_kernel}{{11}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-C}}Discrimination with threshold adjustment}{2}}
 \citation{shawe2004kernel}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Generalization with kernels}{3}}
-\newlabel{eq:svm_dual_kernel}{{14}{3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Discrimination with control limit adjustment}{3}}
-\newlabel{eq:decision_fcn}{{17}{3}}
-\citation{shawe2004kernel}
-\citation{gablonsky2001locally}
-\citation{nlopt}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Hyperparameter optimization}{4}}
-\newlabel{eq:param_opt}{{20}{4}}
-\newlabel{eq:gmean}{{21}{4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Proposed algorithm for anomaly detection}{4}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces (Anomaly detection algorithm) Given $\lambda > 0$ and $\delta > 0$, this algorithm optimizes SVDD's hyperparameters $(C,\sigma )$. Let $s$ being reserved for the iteration counter of an optimization solver $\mathcal  {S}$. It requires training samples $\{ x_k^{train} \}_{k=1}^{N_{train}}$ and testing samples $\{ x_k^{test}, y_k^{test} \}_{k=1}^{N_{test}}$.\relax }}{4}}
+\citation{breunig2000lof}
+\citation{theissler2013autonomously}
+\citation{mockus2012bayesian}
 \citation{Buonadonna2005}
+\newlabel{eq:decision_fcn}{{14}{3}}
+\@writefile{toc}{\contentsline {section}{\numberline {III}Description of Anomaly Detection Procedure for WSNs}{3}}
+\newlabel{sec:implementation}{{III}{3}}
+\newlabel{eq:gmean}{{16}{3}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces (Anomaly detection procedure) Assume a training set $\{\mathbf  {x}_k^{train}\}_k$, a threshold $\delta $ and kernel $\kappa (\cdot ,\cdot )$ are given. This algorithm produces the decision function $f(\cdot )$ defined by the constant $D$, the support vectors $\mathbf  {x}_i$ and corresponding Lagrange mutipliers $\alpha _i$. It also requires the local outlier factor's parameters $k$ and $b$ to be set \emph  {a priori}.\relax }}{3}}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Illustrative Example}{3}}
+\newlabel{sec:Illustrative}{{IV}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}}Data description}{3}}
+\citation{Buonadonna2005}
+\citation{Buonadonna2005}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces A map of sensors' location. (Source: \cite  {Buonadonna2005})\relax }}{4}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:sensor_map}{{1}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}}Results}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Discriminative boundaries with some $\delta $'s values.\relax }}{4}}
+\newlabel{fig:domain_boundary}{{2}{4}}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces DR and FPR versus $\delta $.\relax }}{4}}
+\newlabel{table:delta_eval}{{I}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Time-domain validation.\relax }}{4}}
+\newlabel{fig:time_valid}{{3}{4}}
 \bibstyle{IEEEtran}
 \bibdata{wsnbib,svmbib,ocsvmbib,ibrlbib,miscbib}
-\bibcite{Xie2011}{{1}{}{{}}{{}}}
-\bibcite{feng2017new}{{2}{}{{}}{{}}}
-\bibcite{Rajasegarar2014}{{3}{}{{}}{{}}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Simulation Results}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Data description}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Results}{5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Time-domain validation using the anomaly detector with $\delta =0.02$.\relax }}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Accuracy analysis}{5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Discrimination with different values of $\delta $.\relax }}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Robustness analysis}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Comparison between MHK and RBFK}{5}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusion and Future Work}{5}}
-\bibcite{Tax2004}{{4}{}{{}}{{}}}
-\bibcite{scholkopf2001estimating}{{5}{}{{}}{{}}}
-\bibcite{Vapnik1998}{{6}{}{{}}{{}}}
-\bibcite{chang2013revisit}{{7}{}{{}}{{}}}
-\bibcite{Scholkopf2001}{{8}{}{{}}{{}}}
-\bibcite{shawe2004kernel}{{9}{}{{}}{{}}}
-\bibcite{gablonsky2001locally}{{10}{}{{}}{{}}}
-\bibcite{nlopt}{{11}{}{{}}{{}}}
-\bibcite{Buonadonna2005}{{12}{}{{}}{{}}}
-\providecommand\NAT@force@numbers{}\NAT@force@numbers
+\bibcite{Xie2011}{1}
+\bibcite{sharma2010sensor}{2}
+\bibcite{ilonen2006gaussian}{3}
+\bibcite{clifton2011novelty}{4}
+\bibcite{Tran2015a}{5}
+\bibcite{Tran2015b}{6}
+\bibcite{Chandola2016}{7}
+\bibcite{Tran2016}{8}
+\bibcite{Tran2016c}{9}
+\bibcite{Rajasegarar2014}{10}
+\bibcite{feng2017new}{11}
+\bibcite{abe2005training}{12}
+\bibcite{maboudou2016monitoring}{13}
+\bibcite{Tax2004}{14}
+\bibcite{scholkopf2001estimating}{15}
+\bibcite{Vapnik1998}{16}
+\bibcite{chang2013revisit}{17}
+\bibcite{Scholkopf2001}{18}
+\bibcite{shawe2004kernel}{19}
+\bibcite{breunig2000lof}{20}
+\bibcite{theissler2013autonomously}{21}
+\bibcite{mockus2012bayesian}{22}
+\bibcite{Buonadonna2005}{23}
+\@writefile{toc}{\contentsline {section}{\numberline {V}Concluding remarks}{5}}
+\newlabel{sec:concluding}{{V}{5}}
+\@writefile{toc}{\contentsline {section}{References}{5}}
