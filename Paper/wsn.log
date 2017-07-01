@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.12.1)  29 JUN 2017 15:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.12.1)  1 JUL 2017 12:26
 entering extended mode
 **./wsn.tex
 (wsn.tex
@@ -874,8 +874,20 @@ your preamble.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
-Underfull \hbox (badness 1867) in paragraph at lines 69--70
-\OT1/ptm/m/n/10 de-ploy-ment of a large num-ber of sen-sor nodes in an
+Underfull \hbox (badness 7308) in paragraph at lines 69--70
+[]\OT1/ptm/m/n/10 WSNs are spa-tially dis-tributed au-tonomous sen-sors
+ []
+
+
+Underfull \hbox (badness 3724) in paragraph at lines 69--70
+\OT1/ptm/m/n/10 to mon-i-tor phys-i-cal or en-vi-ron-men-tal con-di-tions, such
+
+ []
+
+
+Underfull \hbox (badness 1748) in paragraph at lines 69--70
+\OT1/ptm/m/n/10 as tem-per-a-ture, vi-bra-tion, pres-sure, mo-tion, etc. and to
+
  []
 
 
@@ -884,25 +896,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--70
  []
 
 
-Underfull \hbox (badness 2635) in paragraph at lines 71--73
-\OT1/ptm/m/n/10 tech-niques have been de-vel-oped for cer-tain ap-pli-ca-tion
- []
-
-
-Underfull \hbox (badness 2088) in paragraph at lines 71--73
-\OT1/ptm/m/n/10 do-mains such as se-cu-rity sys-tems, fraud de-tec-tion and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--73
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 79.
+LaTeX Font Info:    Try loading font information for U+msa on input line 77.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 79.
+LaTeX Font Info:    Try loading font information for U+msb on input line 77.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -910,12 +912,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 ]
-Overfull \hbox (5.29408pt too wide) in paragraph at lines 167--167
+Overfull \hbox (5.29408pt too wide) in paragraph at lines 165--165
 [] 
  []
 
 [2]
-Underfull \hbox (badness 4556) in paragraph at lines 219--220
+Underfull \hbox (badness 4556) in paragraph at lines 217--218
 [] \OT1/ptm/m/n/10 Eval-u-ate $\OML/cmm/m/it/10 g\OT1/cmr/m/n/10 (\OML/cmm/m/it
 /10 C[]; []\OT1/cmr/m/n/10 )$ \OT1/ptm/m/n/10 us-ing both $\OMS/cmsy/m/n/10 f\
 OT1/cmr/bx/n/10 x[]\OMS/cmsy/m/n/10 g[]$ \OT1/ptm/m/n/10 and
@@ -925,33 +927,28 @@ OT1/cmr/bx/n/10 x[]\OMS/cmsy/m/n/10 g[]$ \OT1/ptm/m/n/10 and
 File: Figs/ibrl_wsn.png Graphic file (type png)
 
 <use Figs/ibrl_wsn.png>
-Package pdftex.def Info: Figs/ibrl_wsn.png used on input line 242.
+Package pdftex.def Info: Figs/ibrl_wsn.png used on input line 240.
 (pdftex.def)             Requested size: 225.8432pt x 117.18752pt.
 
 <Figs/data_description.pdf, id=27, 340.1058pt x 224.9357pt>
 File: Figs/data_description.pdf Graphic file (type pdf)
 
 <use Figs/data_description.pdf>
-Package pdftex.def Info: Figs/data_description.pdf used on input line 270.
+Package pdftex.def Info: Figs/data_description.pdf used on input line 267.
 (pdftex.def)             Requested size: 204.06505pt x 134.96245pt.
 
 <Figs/time_validation.pdf, id=28, 627.9051pt x 917.3943pt>
 File: Figs/time_validation.pdf Graphic file (type pdf)
 
 <use Figs/time_validation.pdf>
-Package pdftex.def Info: Figs/time_validation.pdf used on input line 287.
-(pdftex.def)             Requested size: 263.71835pt x 385.30298pt.
+Package pdftex.def Info: Figs/time_validation.pdf used on input line 285.
+(pdftex.def)             Requested size: 439.53058pt x 642.17163pt.
 
-Overfull \hbox (11.71835pt too wide) in paragraph at lines 287--288
- [][] 
- []
 
-[4 <./Figs/ibrl_wsn.png (PNG copy)> <./Figs/data_description.pdf> <./Figs/time_
-validation.pdf
+LaTeX Warning: Float too large for page by 15.77167pt on input line 288.
 
-pdfTeX warning: pdflatex (file ./Figs/time_validation.pdf): PDF inclusion: mult
-iple pdfs with page group included in a single page
->] (wsn.bbl)
+(wsn.bbl [4 <./Figs/ibrl_wsn.png (PNG copy)> <./Figs/data_description.pdf>]
+[5 <./Figs/time_validation.pdf>])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -963,32 +960,34 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[5] (wsn.aux) ) 
+[6
+
+] (wsn.aux) ) 
 Here is how much of TeX's memory you used:
  24837 strings out of 493335
- 623095 string characters out of 3139236
+ 623093 string characters out of 3139236
  783717 words of memory out of 10000000
  27919 multiletter control sequences out of 15000+200000
  47318 words of font info for 102 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,15n,96p,1318b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
-7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
-/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pf
-b>
-Output written on wsn.pdf (5 pages, 733131 bytes).
+ 62i,15n,96p,1543b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/t
+imes/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+
+Output written on wsn.pdf (6 pages, 734618 bytes).
 PDF statistics:
- 195 PDF objects out of 1000 (max. 8388607)
+ 199 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  28 words of extra memory for PDF output out of 10000 (max. 10000000)
 

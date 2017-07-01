@@ -52,7 +52,7 @@ K.~Tran, P.~Castagliola, and G.~Celano, ``Monitoring the {R}atio of {T}wo
   1670--1688, 2016.
 
 \bibitem{Tran2015b}
-K.~Tran, P.~Castagliola, and G.~Celano, ``Monitoring the {R}atio of {T}wo {N}ormal {V}ariables {U}sing {EWMA}
+------, ``Monitoring the {R}atio of {T}wo {N}ormal {V}ariables {U}sing {EWMA}
   {T}ype {C}ontrol {C}harts,'' \emph{Quality and Reliability Engineering
   International}, 2015, in press, DOI: 10.1002/qre.1918.
 
@@ -86,6 +86,13 @@ Z.~Feng, J.~Fu, D.~Du, F.~Li, and S.~Sun, ``A new approach of anomaly detection
   \emph{International Journal of Distributed Sensor Networks}, vol.~13, no.~1,
   p. 1550147716686161, 2017.
 
+\bibitem{Tax2004}
+D.~M.~J. Tax and R.~P.~W. Duin, ``{Support Vector Data Description},''
+  \emph{Machine Learning}, vol.~54, no.~1, pp. 45--66, 2004.
+
+\bibitem{Vapnik1998}
+V.~N. Vapnik, \emph{{Statistical Learning Theory}}, 1998, vol.~pp.
+
 \bibitem{abe2005training}
 S.~Abe, ``Training of support vector machines with mahalanobis kernels,''
   \emph{Artificial Neural Networks: Formal Models and Their Applications--ICANN
@@ -96,17 +103,10 @@ E.~Maboudou-Tchao, I.~Silva, and N.~Diawara, ``Monitoring the mean vector with
   mahalanobis kernels,'' \emph{Quality Technology \& Quantitative Management},
   pp. 1--16, 2016.
 
-\bibitem{Tax2004}
-D.~M.~J. Tax and R.~P.~W. Duin, ``{Support Vector Data Description},''
-  \emph{Machine Learning}, vol.~54, no.~1, pp. 45--66, 2004.
-
 \bibitem{scholkopf2001estimating}
 B.~Sch{\"o}lkopf, J.~C. Platt, J.~Shawe-Taylor, A.~J. Smola, and R.~C.
   Williamson, ``Estimating the support of a high-dimensional distribution,''
   \emph{Neural computation}, vol.~13, no.~7, pp. 1443--1471, 2001.
-
-\bibitem{Vapnik1998}
-V.~N. Vapnik, \emph{{Statistical Learning Theory}}, 1998, vol.~pp.
 
 \bibitem{chang2013revisit}
 W.-C. Chang, C.-P. Lee, and C.-J. Lin, ``A revisit to support vector data
@@ -140,5 +140,9 @@ J.~Mockus, \emph{Bayesian approach to global optimization: theory and
 P.~Buonadonna, D.~Gay, J.~M. Hellerstein, W.~Hong, and S.~Madden, ``{TASK:
   Sensor network in a box},'' \emph{Proceedings of the Second European Workshop
   on Wireless Sensor Networks, EWSN 2005}, vol. 2005, pp. 133--144, 2005.
+
+\bibitem{nlopt}
+S.~G. Johnson, ``The nlopt nonlinear-optimization package,''
+  \url{http://ab-initio.mit.edu/nlopt}.
 
 \end{thebibliography}

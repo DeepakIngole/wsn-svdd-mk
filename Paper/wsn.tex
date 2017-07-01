@@ -55,7 +55,7 @@
 
 \begin{abstract}
 
-In the past few years, wireless sensor networks are increasingly gaining impact in the real world with with various applications such as health-care, condition monitoring, control networks, and many other fields. Anomaly detection in a WSNs is an important aspect of data analysis in order to identify data items which do not conform to an expected pattern or other items in a dataset. This paper describes a novel anomaly detection method using support vector data description kernelized by Mahalanobis distance with adjusted discriminant threshold. The efficiency of this method to detect anomalies in wireless sensor networks is studied over a real data set. Experiment result demonstrates that the proposed approach  achieved a high-level of detection accuracy and a low percentage of false alarm rate.
+In the past few years, wireless sensor networks (WSNs) are increasingly gaining impact in the real world with with various applications such as healthcare, condition monitoring, control networks, etc. Anomaly detection in WSNs is an important aspect of data analysis in order to identify data items which do not conform to an expected pattern or other items in a dataset. This paper describes a novel anomaly detection method using support vector data description (SVDD) kernelized by Mahalanobis distance with adjusted discriminant threshold. The efficiency of this method is studied over a real data set. Numerical result demonstrates that the proposed approach  achieved a high-level of detection accuracy and a low percentage of false alarm rate owing to wise choices of discriminant threshold.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -66,13 +66,11 @@ Wireless sensor networks, Anomaly detection, Support vector data description, Ma
 
 \section{Introduction}
 
-Wireless sensor networks (WSNs) are spatially distributed autonomous sensors to monitor physical or environmental conditions, such as temperature, vibration, pressure, motion, etc. and to cooperatively pass their data through the network to a main location. WSNs are increasingly employed in a range of applications including industrial process, monitoring and control, machine health monitoring, healthcare applications and traffic control, see \cite{Xie2011} for more details. Due to the deployment of a large number of sensor nodes in an uncontrolled or hostile environments, data measured and collected by WSNs is often  unreliable. This will affect the modeling and scientific reasonable inference. Thus, it is very important that the anomaly of sensor node is detected in order to obtain accurate information and make effective decisions by information gatherers, see \cite{sharma2010sensor}\\
+WSNs are spatially distributed autonomous sensors to monitor physical or environmental conditions, such as temperature, vibration, pressure, motion, etc. and to cooperatively pass their data throughout the network. WSNs are increasingly employed in a range of applications including industrial processes, monitoring and control, machine health monitoring, healthcare applications and traffic control, see \cite{Xie2011} for more details. Due to the deployment of a large number of sensor nodes in uncontrolled or hostile environments, data measured and collected by WSNs is often  unreliable. This will affect the modeling and scientific reasonable inference. Thus, it is significant that the anomaly of sensor node is detected in order to obtain accurate information, therefore make effective decisions by information gatherered (see, for instance, \cite{sharma2010sensor}).\\
 
-Anomaly detection is a method to identify when a metric is behaving differently than it has in the past, taking into account trends. Anomaly detection is implemented as one-class classification, because only one class is represented in the training data. In literature, a variety of anomaly detection techniques have been developed for certain application domains such as security systems, fraud detection and statistical process monitoring, for example, see \cite{ilonen2006gaussian}, \cite{clifton2011novelty}, \cite{Tran2015a}, \cite{Tran2015b}, \cite{Chandola2016}, \cite{Tran2016} and \cite{Tran2016c}. Recently, there have been growing interests in applying machine learning approaches for anomaly detection in WSNs. For further details see, for instance, \cite{sharma2010sensor}, \cite{Xie2011}, \cite{Rajasegarar2014} and \cite{Chandola2016}. Very recently \cite{feng2017new} proposed a new SVDD method base Radial basis function (RBF) kernels to reduce computational complexity in the training phase and the testing phase for anomaly detection of node data in WSNs. It is important to note that the advantages of support vector machines is that we can improve generalization ability by proper selection of kernels. Mahalanobis kernels exploit the data distribution information
-more than RBF kernels do, see \cite{abe2005training}. In addition, \cite{maboudou2016monitoring} shown that we can improve the performance of SVDD by using the Mahalanobis kernels.\\
+Anomaly detection is a method to identify whether or not a metric is behaving differently than it has in the past, taking into account trends. This is implemented as one-class classification since only one class is represented in the training data. In literature, a variety of anomaly detection techniques have been developed for certain application domains such as security systems, fraud detection and statistical process monitoring, for example, see \cite{ilonen2006gaussian}, \cite{clifton2011novelty}, \cite{Tran2015a}, \cite{Tran2015b}, \cite{Chandola2016}, \cite{Tran2016} and \cite{Tran2016c}. Recently, there have been growing interests in applying machine learning approaches for anomaly detection in WSNs. For further details see, for instance, \cite{sharma2010sensor}, \cite{Xie2011}, \cite{Rajasegarar2014} and \cite{Chandola2016}. Very recently \cite{feng2017new} proposed a new SVDD method \cite{Tax2004} based on radial basis function (RBF) kernels to reduce computational complexity in the training phase and the testing phase for anomaly detection of node data in WSNs. It is important to note that the advantages of support vector machines (SVMs) \cite{Vapnik1998} is that we can improve generalization ability by proper selection of kernels. Mahalanobis kernels exploit the data distribution information more than RBF kernels do, see \cite{abe2005training}. In addition, \cite{maboudou2016monitoring} shown that we can improve the performance of SVDD by using the Mahalanobis kernels.\\
 
-In this paper, we propose a novel anomaly detection method using support vector data description kernelized by Mahalanobis distance with adjusted discriminant threshold. We then optimize the SVDD parameter and the kernel parameter. The remainder of the paper is
-organized as follows: in Section \ref{sec:SVDD}, some necessary background definitions are introduced; in Section \ref{sec:implementation}, the anomaly detection approach in Wireless Sensor Networks is defined; Section \ref{sec:Illustrative} presents an illustrative example, and finally, some concluding remarks and recommendations are made in Section \ref{sec:concluding}.
+In this contribution, we develop a SVDD using Mahalanobis kernels with adjustable discriminant threshold, with application to anomaly detection in a real WSN's data set. Then, we examine the affect of tuning the aforementioned threshold upon sensitivity of obtained detector. The remainder of the paper is organized as follows: in section \ref{sec:SVDD}, some necessary background on SVDD are introduced; in section \ref{sec:implementation}, the anomaly detection approach in WSNs is defined; section \ref{sec:Illustrative} presents an illustrative example, and finally, some concluding remarks and recommendations are made in section \ref{sec:concluding}.
 
 \section{Support Vector Data Description and Preliminaries}
 \label{sec:SVDD}
@@ -96,20 +94,20 @@ To adapt with nonspherical distribution, a conventional approach is to map given
 	\begin{array}{c}
 		 R, \mathbf{a}, \xi
 	\end{array}}{\text{Minimize }} &R^2 + C \sum_{k=1}^N \xi_k \\
-\text{Subject to } &\left|\left| \phi \left( \mathbf{x}_k \right) - a \right|\right|^2 \le R^2 + \xi_k \text{, } \xi_k \ge 0 \quad \forall k
+\text{Subject to } &\left|\left| \phi \left( \mathbf{x}_k \right) - \mathbf{a}  \right|\right|^2 \le R^2 + \xi_k \text{, } \xi_k \ge 0 \quad \forall k
 \end{align}
 \end{subequations}
 where $\phi \left( \cdot \right)$ is the aforementioned feature mapping. The Lagrangian is hereafter written as:
 \begin{align}
-\mathcal{L} &= R^2 + C \sum_{k=1}^N \xi_k \nonumber \\&- \sum_{k=1}^N \alpha_k \bigg[ R^2 + \xi_k - \left|\left| \phi \left( \mathbf{x}_k \right) - a \right|\right|^2 \bigg] - \sum_{k=1}^N \gamma_k \xi_k \label{eq:svm_lagrange_init}
+\mathcal{L} &= R^2 + C \sum_{k=1}^N \xi_k \nonumber \\&- \sum_{k=1}^N \alpha_k \bigg[ R^2 + \xi_k - \left|\left| \phi \left( \mathbf{x}_k \right) - \mathbf{a} \right|\right|^2 \bigg] - \sum_{k=1}^N \gamma_k \xi_k \label{eq:svm_lagrange_init}
 \end{align}
-with the Lagrange multipliers $\alpha_k, \gamma_k \ge 0$. $\mathcal{L}$ should be minimized w.r.t. $R, a, \xi$ and maximized w.r.t. $\alpha_k, \gamma_k$.
+with the Lagrange multipliers $\alpha_k, \gamma_k \ge 0$. $\mathcal{L}$ should be minimized w.r.t. $R, \mathbf{a}, \xi_k$ and maximized w.r.t. $\alpha_k, \gamma_k$.
 
 Setting partial derivatives w.r.t. $R, a, \xi$ gives:
 \begin{subequations}
 \begin{align}
 \dfrac{\partial \mathcal{L}}{\partial R} = 0 &: \quad \sum_{k=1}^N \alpha_k = 1 \label{eq:svm_lagrange_dLdR} \\
-\dfrac{\partial \mathcal{L}}{\partial a} = 0 &: \quad a = \sum_{k=1}^N \alpha_k \phi \left( \mathbf{x}_k \right) \label{eq:svm_lagrange_dLda} \\
+\dfrac{\partial \mathcal{L}}{\partial \mathbf{a}} = 0 &: \quad \mathbf{a} = \sum_{k=1}^N \alpha_k \phi \left( \mathbf{x}_k \right) \label{eq:svm_lagrange_dLda} \\
 \dfrac{\partial \mathcal{L}}{\partial \xi_k} = 0 &: \quad \alpha_k + \gamma_k = C \quad \forall k \label{eq:svm_lagrange_dLdxi}
 \end{align}
 \end{subequations}
@@ -231,7 +229,7 @@ Generally, the candidate pair $(C_s,\sigma_s)$ at the step 2 is belongto a finit
 
 \section{Illustrative Example}
 \label{sec:Illustrative}
-This section investigates the efficiency of anomaly detection algorithm using Mahalanobis kernel and control limit adjustment over a real data set. All computation was performed on a platform with 2.6 GHz Intel(R) Core(TM) i7 and 16GB of RAM.
+This section investigates the efficiency of anomaly detection algorithm over a real data set. The source code is freely available at \url{https://github.com/trinhvv/wsn-svdd-mk}. All computation was performed on a platform with 2.6 GHz Intel(R) Core(TM) i7 and 16GB of RAM.
 
 \subsection{Data description}
 
@@ -252,56 +250,51 @@ In order to evaluate performance of the proposed method, we also use a testing s
 
 \subsection{Results}
 
-First, we use the Matlab's routine \emph{consolidator($\cdot$)}\footnote{https://mathworks.com/matlabcentral/fileexchange/8354-consolidator} to reduce the cardinality of training set into only $55421$ samples. Then, by using local outlier factor method with $k = 50 \text{, } b = 1 \%$, $54866$ normal and $555$ anomalous samples are obtained. The inverse of covariance matrix corresponding to normal samples is:
-\begin{align}
-S^{-1} = \begin{bmatrix}
-27,468 & 14,46 \\
-14,46 & 25,27
-\end{bmatrix}
-\end{align}
-
-With different values as
+First, we use the Matlab's routine \emph{consolidator($\cdot$)}\footnote{https://mathworks.com/matlabcentral/fileexchange/8354-consolidator} to reduce the cardinality of training set into only $55421$ samples. Then, by using local outlier factor method with $k = 50 \text{, } b = 1 \%$, $54866$ normal and $555$ anomalous samples are obtained. These samples will be hereafter used for training the SVDD given a grid of $\delta$'s values as:
 \begin{align}
 \delta \in \{ 0.001, 0.005, 0.01, 0.02, 0.03, 0.05, 0.1 \}
 \end{align}
-the Alg. 1 gives the hyperparameters $(C,\sigma)$ with corresponding decision function. Fig.~\ref{fig:domain_boundary} illustrates obtained decision boundaries. It is evident that with $0.01 \le \delta \le 0.05$, the distribution of considered data can be well estimated. 
-\begin{figure}[H]
+For details, solutions of the kernelized dual optimisation \eqref{eq:svm_dual_kernel} are obtained using the IBM ILOG CPLEX solver while optimal hyperparameters $(C,\sigma)$ are given by means of Bayesian optimization using the NLopt package \cite{nlopt}.
+
+Fig.~\ref{fig:domain_boundary} illustrates obtained decision boundaries. It is evident that with $0.01 \le \delta \le 0.05$, the distribution of considered data can be well estimated. 
+
+Table 1 presents the DR and FPR obtained. Although with $\delta \ge 0.02$, these performance indices are surpringly satisfactory, these results might be unreliable as well as conservative. Since the FPR is generally assumed to be about $5 \%$, the choices of $\delta=0.01$ or $0.02$ may be appropriate. 
+
+Fig.~\ref{fig:time_valid} depicts detection result on considered nodes over time with $\delta=0.02$, $C=0.5025$ and $\sigma=0.5039$. While perfect DR is admitted as in the Table 1, one can observe some false alarms which is acceptable.
+
+\begin{figure}
 \centering
 \includegraphics[scale=.6]{Figs/data_description.pdf}
-\caption{Discriminative boundaries with some $\delta$'s values.}
+\caption{Discrimination boundaries with some $\delta$'s values. The distribution of IBRL data is well estimated with sufficiently large threshold $\delta$. Also, low values of threshold $\delta$ may lead to sensitivity of the anomaly detection algorithm.}
 \label{fig:domain_boundary}
 \end{figure}
  
-\begin{table}[H]
+\begin{table}
 \begin{tabular}{lccccccc}
+\toprule
 $\delta$ & 0.001 & 0.005 & 0.01 & 0.02 & 0.03 & 0.05 & 0.1 \\\midrule[\lightrulewidth]
 DR [\%] & 100 & 100 & 100 & 100 & 100 & 100 & 100 \\
-\emph{FPR} [\%] & 29.61 & 5.66 & 3.45 & 0 & 0 & 0 &0 \\\midrule[\lightrulewidth]
+\emph{FPR} [\%] & 29.61 & 5.66 & 3.45 & 0 & 0 & 0 &0 \\\bottomrule
 \end{tabular}
 \caption{DR and FPR versus $\delta$.}
 \label{table:delta_eval}
 \end{table}
 
-\begin{figure}[H]
+\begin{figure*}
 \centering
-\includegraphics[scale=.42]{Figs/time_validation.pdf}
-\caption{Time-domain validation.}
+\includegraphics[scale=.7]{Figs/time_validation.pdf}
+\caption{Anomaly detection validation upon whole IBRL data set on $5$ nodes. All apparent anomalies, i.e. temperature and humidity measurements that are too high or too low, are detected. Although nodes $35$ and $37$ exhibit several false alarms, such a fault detection is unavoidable and acceptable in practice.}
 \label{fig:time_valid}
-\end{figure}
-
-Table 1 presents the DR and FPR. Although with $\delta \ge 0.02$, these performance indices are surpringly good. However, this results might be unreliable and conservative. Since, the FPR is generally assumed to be about $5 \%$, the choices of $\delta=0.01$ or $0.02$ may be appropriate. 
-
-Fig.~\ref{fig:time_valid} depicts detection result on considered nodes over time with $\delta=0.02$, $C=0.5025$ and $\sigma=0.5039$. While the perfect DR is admitted as in the Table 1, one can observe some false alarm which is acceptable.
+\end{figure*}
 
 \section{Concluding remarks}\label{sec:concluding}
 
-We presented a novel anomaly detection approach using SVDD in WSNs. Unlike the existing techniques which are all based on the RBF kernels, we developed an even more robust approach by incorporating the Mahalanobis distance-based kernel to SVDD and discriminative adjustment. Experiment result shown that the proposed approach achieved a high-level of detection accuracy and a low percentage of false alarm rate.  
+We presented a novel anomaly detection approach using SVDD in WSNs. Unlike the existing techniques which are all based on the RBF kernels, we developed an even more robust approach by incorporating the Mahalanobis kernels. Numerical result shown that the proposed approach achieved a high-level of detection accuracy and a low false alarm rate with appropriate  discriminative threshold.  
 
-In the future, we would like to address the problem of anomaly detection using autoencoder and control charts and  for uncertain data. We also focus on the detection ability of our proposed approach for large stream data.
+In the future, we would like to address the anomaly detection problem using autoencoder and control charts, targeting on time series data with uncertainties. We also focus on the detection ability of our proposed approach for large stream data.
 
 \bibliographystyle{IEEEtran}
 \bibliography{wsnbib,svmbib,ocsvmbib,ibrlbib,miscbib}
-
 
 \end{document}
 
