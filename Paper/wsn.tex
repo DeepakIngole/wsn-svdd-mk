@@ -128,9 +128,9 @@ Substituting \eqref{eq:svm_lagrange_dLdR}-\eqref{eq:svm_lagrange_dLdxi} into \eq
 This standard quadratic program (QP) and can be solved more efficiently than the primal problem. Evidently, \eqref{eq:svm_dual} is feasible iff $C \ge \dfrac{1}{N}$ \cite{chang2013revisit}. Assume that such a feasibility condition holds, the following interpretation is trivial once \eqref{eq:svm_dual} is solved.
 \begin{subequations}
 \begin{align}
-&\left|\left| \phi \left( \mathbf{x}_k \right) - a \right|\right|^2 < R^2 \to \alpha_k = 0 \\
-&\left|\left| \phi \left( \mathbf{x}_k \right) - a \right|\right|^2 = R^2 \to 0 < \alpha_k < C \label{eq:sv_alpha}\\
-&\left|\left| \phi \left( \mathbf{x}_k \right) - a \right|\right|^2 > R^2 \to \alpha_k = C
+&\left|\left| \phi \left( \mathbf{x}_k \right) - \mathbf{a} \right|\right|^2 < R^2 \to \alpha_k = 0 \\
+&\left|\left| \phi \left( \mathbf{x}_k \right) - \mathbf{a} \right|\right|^2 = R^2 \to 0 < \alpha_k < C \label{eq:sv_alpha}\\
+&\left|\left| \phi \left( \mathbf{x}_k \right) - \mathbf{a} \right|\right|^2 > R^2 \to \alpha_k = C
 \end{align}
 \end{subequations}
 Only data samples $\mathbf{x}_k$ with $0 < \alpha_k < C$ are required in the distribution's description and these will therefore be refrered to as \emph{support vectors}. This will be discussed later after we generalize the current linear SVDD into nonlinear version using kernel functions in the next sub-section. 
@@ -166,16 +166,16 @@ R = \sqrt{\kappa \left( \mathbf{x}_i, \mathbf{x}_i \right) - 2 \sum_{i=1}^m \alp
 
 \subsection{Discrimination with threshold adjustment}
 
-This sub-section aims to establish the discriminative function for detecting anomalies. Roughly speaking, the kernel distance, namely $d \left( z, a \right)$, between a test sample $z$ and the center $\mathbf{a}$ of sphere will be computed:
+This sub-section aims to establish the discriminative function for detecting anomalies. Roughly speaking, the kernel distance, namely $d \left( z, a \right)$, between a test sample $\mathbf{z}$ and the center $\mathbf{a}$ of sphere will be computed:
 \begin{align}
-&d \left( z, a \right) = \nonumber \\ &\sqrt{\kappa \left( z, z \right) - 2 \sum_{i=1}^m \alpha_i \kappa \left( z, \mathbf{x}_i \right) + \sum_{k=i}^m \sum_{j=1}^m \alpha_i \alpha_j \kappa \left( \mathbf{x}_i, \mathbf{x}_j \right)}
+&d \left( \mathbf{z}, \mathbf{a} \right) = \nonumber \\ &\sqrt{\kappa \left( \mathbf{z}, \mathbf{z} \right) - 2 \sum_{i=1}^m \alpha_i \kappa \left( \mathbf{z}, \mathbf{x}_i \right) + \sum_{k=i}^m \sum_{j=1}^m \alpha_i \alpha_j \kappa \left( \mathbf{x}_i, \mathbf{x}_j \right)}
 \end{align}
 Then, this distance is compared with an appropriate threshold for discrimination. A trivial choice of such a threshold is sphere's radius $R$. This means that the data lies within the sphere will be categorized as anomalous. However, as suggested in \cite[Section~7.1]{shawe2004kernel}, it might be better to introduce a slack variable $\delta$ chosen \emph{a priori} into the discriminative function. This is due to the fact that there is no guarantee that the data point outside the sphere is anomalous.
 
 Thus, we hereafter use the following discriminative function for inclusion, where $\mathcal{H}$ stands for the Heaviside function $\mathcal{H}(x) = 1$, if $x \ge 0$ and $0$ otherwise.
 \begin{align}
 f \left( \mathbf{z} \right) &= \mathcal{H} \left( d - R^2 - \delta \right) \nonumber \\
-&= \mathcal{H} \left( \kappa \left( \mathbf{z}, \mathbf{z} \right) - 2 \sum_{i=1}^m \alpha_i \kappa \left( z, \mathbf{x}_i \right) - D \right) \label{eq:decision_fcn}
+&= \mathcal{H} \left( \kappa \left( \mathbf{z}, \mathbf{z} \right) - 2 \sum_{i=1}^m \alpha_i \kappa \left( \mathbf{z}, \mathbf{x}_i \right) - D \right) \label{eq:decision_fcn}
 \end{align}
 whereas the constant $D$ can be pre-computed offline:
 \begin{align}
@@ -193,7 +193,7 @@ For performance evaluation, the false positive and false negative rates are used
 g = \sqrt{(100-FPR) \times DR}
 \end{align}
 
-Nevertheless, evaluating aforementioned performance measures requires the training samples to be labelled as either normal or anomalous. In this paper, such a labeling task will be done by means of \emph{local outlier factor} \cite{breunig2000lof}, a nonparametric method to find anomalous data by measuring the local distance to its $k$ neighbours. Then, a percentage of data, namely $b$, typically less than $5 \%$, is classified as anomalous based on such local distances. Thus, the training set is splitted into the normal samples $\{\mathbf{x}_k^{normal}\}_k$ and anomalous samples $\{\mathbf{x}_k^{anomalous}\}_k$.
+Nevertheless, evaluating aforementioned performance measures requires the training samples to be labelled as either normal or anomalous. In this paper, such a labeling task will be done by means of \emph{local outlier factor} (LOF) \cite{breunig2000lof}, a nonparametric method to find anomalous data by measuring the local distance to its $k$ neighbours. Then, a percentage of data, namely $b$, typically less than $5 \%$, is classified as anomalous based on such local distances. Thus, the training set is splitted into the normal samples $\{\mathbf{x}_k^{normal}\}_k$ and anomalous samples $\{\mathbf{x}_k^{anomalous}\}_k$.
 
 The major drawback of using local outlier factor for labeling is that it may leads to a typical high value of FPR which is generally prohibited. However, we will show later that by choosing a sufficiently large threshold $\delta$, such an issue can be alleviated.
 
@@ -225,7 +225,7 @@ The whole procedure is summarized as below.
 \end{algorithmic}
 \end{algorithm}
 
-Generally, the candidate pair $(C_s,\sigma_s)$ at the step 2 is belongto a finite set of candidates. Such a candicates are produced either by heuristic grid search \cite{theissler2013autonomously} or Bayesian optimization \cite{mockus2012bayesian}.
+Generally, the candidate pair $(C_s,\sigma_s)$ at the step 2 is belongto a finite set of candidates. Such a candicates are produced either by heuristic grid search \cite{theissler2013autonomously} or Bayesian optimization \cite{mockus2012bayesian}. The latter approach will be used in this paper.
 
 \section{Illustrative Example}
 \label{sec:Illustrative}
@@ -233,7 +233,7 @@ This section investigates the efficiency of anomaly detection algorithm over a r
 
 \subsection{Data description}
 
-We consider a data set gathered from a wireless sensor network deployment at the Intel Berkeley Research Laboratory (IBRL) \cite{Buonadonna2005}. A wireless sensor network consisting of $54$ \emph{Mica2Dot} sensor nodes was deployed in the IBRL for a $30$ day ($720$ hour) period between 28th Feb 2004 and 5th April 2004 [10]. Fig.~\ref{fig:sensor_map} shows the sensor deployment in the laboratory. The sensors collect five measurements: light in Lux, temperature in degrees celsius, humidity (temperature corrected relative humidity) ranging from $0\%$ to $100\%$, voltage in volts and network topology information in each $30$ second interval. Node $0$ is the gateway node. Other nodes transmit their data in multiple hops to the gateway node. The furthest node in the network is about $10$ hops away from the gateway node. During the $30$ day period, the $54$ nodes collected about $2.3$ million readings.
+We consider a data set gathered from a WSN deployment at the Intel Berkeley Research Laboratory (IBRL) \cite{Buonadonna2005} with $54$ \emph{Mica2Dot} sensor nodes. Fig.~\ref{fig:sensor_map} shows the sensor deployment in the laboratory. The sensors collect five measurements: light in Lux, temperature in degrees celsius, humidity (temperature corrected relative humidity) ranging from $0\%$ to $100\%$, voltage in volts and network topology information in each $30$ second sampling period. Node $0$ is the gateway node while other nodes broadcast their data in multiple hops to the gateway node. During the $30$ day ($720$ hour) period between 28th Feb 2004 and 5th April 2004, the $54$ nodes collected about $2.3$ million readings.
 
 \begin{figure}[H]
 \centering
@@ -242,34 +242,36 @@ We consider a data set gathered from a wireless sensor network deployment at the
 \label{fig:sensor_map}
 \end{figure}
 
-In this paper we consider the IBRL data set obtained from $5$ close nodes, $1, 2, 33, 35, 37$. Also, only two features, namely temperature and humidity, are taken into account. 
-
-The data during the first $10$ days period on March 2004 will be used as the training set. This training set contains more than $82000$ samples. 
+In this paper we consider the IBRL data set obtained from $5$ close nodes, $1, 2, 33, 35, 37$. Also, only two features, namely temperature and humidity, are taken into account. The data during the first $10$ days period on March 2004 will be used as the training set. This training set contains more than $82000$ samples. 
 
 In order to evaluate performance of the proposed method, we also use a testing set in some concrete time intervals. Since the original data did not contain any labels as to which data is normal and anomalous, we visually identify and label them as normal and anomalous. This data set contains about $10000$ normal and $4000$ anomalous samples.
 
-\subsection{Results}
+\subsection{Numerical results}
 
-First, we use the Matlab's routine \emph{consolidator($\cdot$)}\footnote{https://mathworks.com/matlabcentral/fileexchange/8354-consolidator} to reduce the cardinality of training set into only $55421$ samples. Then, by using local outlier factor method with $k = 50 \text{, } b = 1 \%$, $54866$ normal and $555$ anomalous samples are obtained. These samples will be hereafter used for training the SVDD given a grid of $\delta$'s values as:
+First, we use the Matlab's routine \emph{consolidator($\cdot$)}\footnote{https://mathworks.com/matlabcentral/fileexchange/8354-consolidator} to reduce the cardinality of training set into only $55421$ samples.
+
+Fig.~\ref{fig:lof} shows the normal and anomalous sets produced by using  LOF method whereas $k = 50 \text{, } b = 1 \%$, $54866$ normal and $555$ anomalous samples are obtained. Notes however that this raw detection is likely wrong but it is helpful for computing the g-mean metric.  
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.6]{Figs/lof.pdf}
+\caption{LOF detection result with $k = 50$ and $b = 1 \%$.}
+\label{fig:lof}
+\end{figure}
+
+These samples will be hereafter used for training the SVDD given a grid of $\delta$'s values as:
 \begin{align}
 \delta \in \{ 0.001, 0.005, 0.01, 0.02, 0.03, 0.05, 0.1 \}
 \end{align}
-For details, solutions of the kernelized dual optimisation \eqref{eq:svm_dual_kernel} are obtained using the IBM ILOG CPLEX solver while optimal hyperparameters $(C,\sigma)$ are given by means of Bayesian optimization using the NLopt package \cite{nlopt}.
-
-Fig.~\ref{fig:domain_boundary} illustrates obtained decision boundaries. It is evident that with $0.01 \le \delta \le 0.05$, the distribution of considered data can be well estimated. 
-
-Table 1 presents the DR and FPR obtained. Although with $\delta \ge 0.02$, these performance indices are surpringly satisfactory, these results might be unreliable as well as conservative. Since the FPR is generally assumed to be about $5 \%$, the choices of $\delta=0.01$ or $0.02$ may be appropriate. 
-
-Fig.~\ref{fig:time_valid} depicts detection result on considered nodes over time with $\delta=0.02$, $C=0.5025$ and $\sigma=0.5039$. While perfect DR is admitted as in the Table 1, one can observe some false alarms which is acceptable.
-
-\begin{figure}
+For details, solutions of the kernelized dual optimisation \eqref{eq:svm_dual_kernel} are obtained using the IBM ILOG CPLEX solver while optimal hyperparameters $(C,\sigma)$ are given by means of Bayesian optimization using the NLopt package \cite{nlopt}. Fig.~\ref{fig:domain_boundary} illustrates obtained decision boundaries. It is evident that with $0.01 \le \delta \le 0.05$, the distribution of considered data can be well estimated. 
+\begin{figure}[H]
 \centering
 \includegraphics[scale=.6]{Figs/data_description.pdf}
-\caption{Discrimination boundaries with some $\delta$'s values. The distribution of IBRL data is well estimated with sufficiently large threshold $\delta$. Also, low values of threshold $\delta$ may lead to sensitivity of the anomaly detection algorithm.}
+\caption{Discrimination boundaries with some $\delta$'s values. The samples are normal data obtained from local outlier factor detection. The distribution of IBRL data is well estimated with sufficiently large threshold $\delta$. Also, low values of threshold $\delta$ may lead to sensitivity of the anomaly detection algorithm.}
 \label{fig:domain_boundary}
 \end{figure}
- 
-\begin{table}
+
+Table 1 presents the DR and FPR obtained. Although with $\delta \ge 0.02$, these performance indices are surpringly satisfactory, these results might be unreliable as well as conservative. Since the FPR is generally assumed to be about $5 \%$, the choices of $\delta=0.01$ or $0.02$ may be appropriate. 
+\begin{table}[H]
 \begin{tabular}{lccccccc}
 \toprule
 $\delta$ & 0.001 & 0.005 & 0.01 & 0.02 & 0.03 & 0.05 & 0.1 \\\midrule[\lightrulewidth]
@@ -280,6 +282,7 @@ DR [\%] & 100 & 100 & 100 & 100 & 100 & 100 & 100 \\
 \label{table:delta_eval}
 \end{table}
 
+Fig.~\ref{fig:time_valid} depicts detection result on considered nodes over time with $\delta=0.02$, $C=0.5025$ and $\sigma=0.5039$. While perfect DR is admitted as in the Table 1, one can observe some false alarms which is acceptable.
 \begin{figure*}
 \centering
 \includegraphics[scale=.7]{Figs/time_validation.pdf}

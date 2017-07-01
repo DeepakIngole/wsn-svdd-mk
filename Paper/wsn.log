@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.12.1)  1 JUL 2017 12:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.12.1)  1 JUL 2017 13:01
 entering extended mode
 **./wsn.tex
 (wsn.tex
@@ -929,26 +929,35 @@ File: Figs/ibrl_wsn.png Graphic file (type png)
 <use Figs/ibrl_wsn.png>
 Package pdftex.def Info: Figs/ibrl_wsn.png used on input line 240.
 (pdftex.def)             Requested size: 225.8432pt x 117.18752pt.
+ <Figs/lof.pdf, id=27, 345.98076pt x 224.9357pt>
+File: Figs/lof.pdf Graphic file (type pdf)
 
-<Figs/data_description.pdf, id=27, 340.1058pt x 224.9357pt>
+<use Figs/lof.pdf>
+Package pdftex.def Info: Figs/lof.pdf used on input line 256.
+(pdftex.def)             Requested size: 207.59004pt x 134.96245pt.
+ <Figs/data_description.pdf, id=28, 340.1058pt x 224.9357pt>
 File: Figs/data_description.pdf Graphic file (type pdf)
 
 <use Figs/data_description.pdf>
-Package pdftex.def Info: Figs/data_description.pdf used on input line 267.
+Package pdftex.def Info: Figs/data_description.pdf used on input line 268.
 (pdftex.def)             Requested size: 204.06505pt x 134.96245pt.
 
-<Figs/time_validation.pdf, id=28, 627.9051pt x 917.3943pt>
+<Figs/time_validation.pdf, id=29, 627.9051pt x 917.3943pt>
 File: Figs/time_validation.pdf Graphic file (type pdf)
 
 <use Figs/time_validation.pdf>
-Package pdftex.def Info: Figs/time_validation.pdf used on input line 285.
+Package pdftex.def Info: Figs/time_validation.pdf used on input line 288.
 (pdftex.def)             Requested size: 439.53058pt x 642.17163pt.
 
 
-LaTeX Warning: Float too large for page by 15.77167pt on input line 288.
+LaTeX Warning: Float too large for page by 15.77167pt on input line 291.
 
-(wsn.bbl [4 <./Figs/ibrl_wsn.png (PNG copy)> <./Figs/data_description.pdf>]
-[5 <./Figs/time_validation.pdf>])
+[4 <./Figs/ibrl_wsn.png (PNG copy)> <./Figs/lof.pdf> <./Figs/data_description.p
+df
+
+pdfTeX warning: pdflatex (file ./Figs/data_description.pdf): PDF inclusion: mul
+tiple pdfs with page group included in a single page
+>] [5 <./Figs/time_validation.pdf>] (wsn.bbl)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -960,34 +969,32 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6
-
-] (wsn.aux) ) 
+[6] (wsn.aux) ) 
 Here is how much of TeX's memory you used:
- 24837 strings out of 493335
- 623093 string characters out of 3139236
+ 24844 strings out of 493335
+ 623185 string characters out of 3139236
  783717 words of memory out of 10000000
- 27919 multiletter control sequences out of 15000+200000
+ 27925 multiletter control sequences out of 15000+200000
  47318 words of font info for 102 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,15n,96p,1543b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/t
-imes/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-
-Output written on wsn.pdf (6 pages, 734618 bytes).
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
+7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
+/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pf
+b>
+Output written on wsn.pdf (6 pages, 934190 bytes).
 PDF statistics:
- 199 PDF objects out of 1000 (max. 8388607)
+ 215 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
