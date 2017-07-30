@@ -80,15 +80,15 @@ S.~Rajasegarar, C.~Leckie, and M.~Palaniswami, ``{Hyperspherical cluster based
   [Online]. Available: \url{http://dx.doi.org/10.1016/j.jpdc.2013.09.005}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Tax2004}
+D.~M.~J. Tax and R.~P.~W. Duin, ``{Support Vector Data Description},''
+  \emph{Machine Learning}, vol.~54, no.~1, pp. 45--66, 2004.
+
 \bibitem{feng2017new}
 Z.~Feng, J.~Fu, D.~Du, F.~Li, and S.~Sun, ``A new approach of anomaly detection
   in wireless sensor networks using support vector data description,''
   \emph{International Journal of Distributed Sensor Networks}, vol.~13, no.~1,
   p. 1550147716686161, 2017.
-
-\bibitem{Tax2004}
-D.~M.~J. Tax and R.~P.~W. Duin, ``{Support Vector Data Description},''
-  \emph{Machine Learning}, vol.~54, no.~1, pp. 45--66, 2004.
 
 \bibitem{Vapnik1998}
 V.~N. Vapnik, \emph{{Statistical Learning Theory}}, 1998, vol.~pp.

@@ -11,7 +11,6 @@ plot(positiveData(:,1),positiveData(:,2),'r*');hold on;
 plot(negativeData(:,1),negativeData(:,2),'b*');hold on;
 plot(testData(boundaryLabel==1,1),testData(boundaryLabel==1,2),'g*','linewidth',2);
 
-%%
 %% Time-domain validation
 %
 clear ibrlData;
